@@ -1,3 +1,5 @@
+Color Palette - https://coolors.co/f7f7f7-5f4bb6-221d23-e08dac-45cb85
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
