@@ -1,4 +1,3 @@
-"use client";
 import { motion } from "framer-motion";
 
 const images = [
@@ -39,7 +38,7 @@ export default function Carousel() {
           {[...images, ...images].map((src, index) => (
             <div
               key={index}
-              className="flex-shrink-0 w-[400px] h-[250px] rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
+              className="flex-shrink-0 w-[350px] h-[175px] rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
             >
               <img
                 src={src}
