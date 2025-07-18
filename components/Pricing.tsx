@@ -29,43 +29,43 @@ export default function Carousel() {
       <div className="relative grid gap-8 md:grid-cols-3 max-w-6xl mx-auto">
         {[
           {
-            name: "Starter",
-            price: 499,
+            name: "Lite",
+            price: 2499,
             color: "#564E58",
             features: [
-              { text: "Landing pages", included: true },
-              { text: "Basic integrations", included: true },
-              { text: "Email support", included: true },
-              { text: "Custom API work", included: false },
-              { text: "Priority queue", included: false },
+              { text: "WordPress or Shopify support", included: true },
+              { text: "Minor theme & template edits", included: true },
+              { text: "Security & performance updates", included: true },
+              { text: "1 active task at a time", included: true },
+              { text: "1 sprint per month", included: true },
             ],
             cta: "Get Started",
             highlight: false,
           },
           {
-            name: "Professional",
-            price: 999,
+            name: "Core",
+            price: 4995,
             color: "#904E55",
             features: [
-              { text: "Landing pages", included: true },
-              { text: "Backend systems", included: true },
-              { text: "Priority support", included: true },
-              { text: "Custom API work", included: true },
-              { text: "Weekly sprint insights", included: true },
+              { text: "Everything in Lite", included: true },
+              { text: "Biweekly 2-week sprints", included: true },
+              { text: "2 active tasks at a time", included: true },
+              { text: "Custom WordPress/Shopify builds", included: true },
+              { text: "Basic API integrations", included: true },
             ],
             cta: "Most Popular",
             highlight: true,
           },
           {
-            name: "Enterprise",
-            price: 1999,
+            name: "Advanced",
+            price: "Custom",
             color: "#BFB48F",
             features: [
-              { text: "All Pro features", included: true },
-              { text: "Dedicated developer", included: true },
-              { text: "Custom roadmap", included: true },
-              { text: "Slack + Loom updates", included: true },
-              { text: "Same-day bug fixes", included: true },
+              { text: "All Core features", included: true },
+              { text: "React or Vue development", included: true },
+              { text: "Advanced API integrations", included: true },
+              { text: "Complex UI/UX implementations", included: true },
+              { text: "Tailored sprint planning", included: true },
             ],
             cta: "Contact Us",
             highlight: false,
@@ -78,30 +78,15 @@ export default function Carousel() {
             transition={{ delay: i * 0.2, type: "spring", stiffness: 80 }}
             viewport={{ once: true }}
             whileHover={{ scale: 1.03, y: -5 }}
-            className="rounded-xl shadow-lg bg-white flex flex-col"
+            className="rounded-xl shadow-lg bg-white flex flex-col p-6"
           >
-            {/* Colored Header */}
-            <div
-              className="p-6 text-center rounded-tl-xl rounded-tr-xl"
-              style={{ backgroundColor: plan.color }}
-            >
-              <h3 className="font-sans text-lg font-semibold text-white uppercase tracking-wide">
-                {plan.name}
-              </h3>
-              <p className="font-sans text-4xl font-bold text-white mt-2">
-                ${plan.price}
-              </p>
-              <span className="text-white text-sm">per month</span>
-
-              {plan.highlight && (
-                <div className="z-10 absolute -top-3 left-1/2 -translate-x-1/2 bg-white text-brand-black text-xs font-semibold px-3 py-1 rounded-full shadow">
-                  Most Popular
-                </div>
-              )}
-            </div>
+            {/* Header */}
+            <h3 className="font-sans text-xl font-semibold text-brand-black mb-6">
+              {plan.name} Plan
+            </h3>
 
             {/* Feature List */}
-            <ul className="flex-1 p-6 space-y-3 text-left">
+            <ul className="space-y-3 mb-8 text-left">
               {plan.features.map((feature, idx) => (
                 <li key={idx} className="flex items-center gap-2 text-gray-700 text-sm">
                   {feature.included ? (
@@ -114,19 +99,38 @@ export default function Carousel() {
               ))}
             </ul>
 
-            {/* CTA Button */}
-            <div className="p-6">
-              <a
-                href="#contact"
-                className="block text-center py-3 rounded-md text-white font-medium transition-colors duration-300"
-                style={{ backgroundColor: plan.color }}
-              >
-                {plan.highlight ? "Buy Now" : "Get Started"}
-              </a>
+            {/* Price */}
+            <div className="mt-auto mb-4">
+              {typeof plan.price === "number" ? (
+                <>
+                  <p className="font-sans text-4xl font-bold text-brand-black">
+                    ${plan.price.toLocaleString()}
+                    <span className="text-base font-normal ml-1 align-baseline">
+                      per month
+                    </span>
+                  </p>
+                  <p className="text-sm text-brand-black mt-1">billed monthly</p>
+                </>
+              ) : (
+                <p className="font-sans text-4xl font-bold text-brand-black">
+                  {plan.price}
+                  <p className="font-normal text-sm text-brand-black mt-1">billed monthly</p>
+                </p>
+              )}
             </div>
+
+            {/* CTA Button */}
+            <a
+              href="#contact"
+              className="inline-block w-full text-center py-3 rounded-md text-white font-medium transition-colors duration-300"
+              style={{ backgroundColor: plan.color }}
+            >
+              {plan.highlight ? "Buy Now →" : plan.cta + " →"}
+            </a>
           </motion.div>
         ))}
       </div>
     </section>
+
   );
 }

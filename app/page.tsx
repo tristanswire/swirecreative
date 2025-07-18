@@ -3,8 +3,10 @@
 import { motion } from "framer-motion";
 import Carousel from "@/components/Carousel";
 import Faq from "@/components/Faq";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import How from "@/components/How";
 import Membership from "@/components/Membership";
 import Pricing from "@/components/Pricing";
 
@@ -15,16 +17,11 @@ export default function Home() {
       <Header />
       <Hero />
       <Carousel />
+      <How />
       <Membership />
       <Pricing />
       <Faq />
-
-      {/* Footer */}
-      <footer className="bg-brand-black text-brand-white text-center py-8 border-t-1 bt-brand-white">
-        <p className="text-sm">
-          © {new Date().getFullYear()} <span className="font-semibold">Swire Creative</span>. All rights reserved.
-        </p>
-      </footer>
+      <Footer />
     </main>
     
   );
