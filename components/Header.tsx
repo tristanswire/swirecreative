@@ -5,9 +5,9 @@ export default function Header() {
         <header className="bg-brand-white py-4 shadow-sm">
             <div className="relative container mx-auto flex items-center justify-center">
                 {/* Logo */}
-                <a href="/" className="absolute left-0 text-brand-black font-medium tracking-wider text-md">
+                <Link href="/" className="absolute left-0 text-brand-black font-medium tracking-wider text-md">
                     swire creative
-                </a>
+                </Link>
 
                 {/* Navigation */}
                 <nav className="flex gap-6">

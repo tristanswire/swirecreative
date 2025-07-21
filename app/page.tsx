@@ -1,6 +1,4 @@
 "use client";
-
-import { motion } from "framer-motion";
 import Carousel from "@/components/Carousel";
 import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";

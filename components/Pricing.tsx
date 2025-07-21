@@ -103,19 +103,19 @@ export default function Carousel() {
             <div className="mt-auto mb-4">
               {typeof plan.price === "number" ? (
                 <>
-                  <p className="font-sans text-4xl font-bold text-brand-black">
+                  <div className="font-sans text-4xl font-bold text-brand-black">
                     ${plan.price.toLocaleString()}
                     <span className="text-base font-normal ml-1 align-baseline">
                       per month
                     </span>
-                  </p>
+                  </div>
                   <p className="text-sm text-brand-black mt-1">billed monthly</p>
                 </>
               ) : (
-                <p className="font-sans text-4xl font-bold text-brand-black">
+                <div className="font-sans text-4xl font-bold text-brand-black">
                   {plan.price}
                   <p className="font-normal text-sm text-brand-black mt-1">billed monthly</p>
-                </p>
+                </div>
               )}
             </div>
 
