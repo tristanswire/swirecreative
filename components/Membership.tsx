@@ -5,8 +5,8 @@ export default function Carousel() {
         <section id="benefits" className="bg-brand-black py-32 px-6 text-center">
             {/* Title + Subtitle */}
             <motion.h2
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.4 }}
                 viewport={{ once: true }}
                 className="font-sans text-4xl font-semibold text-brand-white mb-4"
@@ -15,8 +15,8 @@ export default function Carousel() {
             </motion.h2>
 
             <motion.p
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
                 transition={{ delay: 0.2, duration: 0.4 }}
                 viewport={{ once: true }}
                 className="text-lg font-light text-brand-white max-w-2xl mx-auto mb-16"
@@ -150,15 +150,15 @@ export default function Carousel() {
                 ].map(({ title, desc, icon }, i) => (
                 <motion.div
                     key={i}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
                     transition={{ delay: i * 0.1, type: "spring", stiffness: 80 }}
                     viewport={{ once: true }}
                     whileHover={{ scale: 1.03, y: -3 }}
                     className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 text-center"
                 >
                     {/* Icon in gradient circle */}
-                    <div className="w-12 h-12 mx-auto rounded-full flex items-center justify-center bg-brand-maroon mb-4 shadow-md">
+                    <div className="w-12 h-12 mx-auto rounded-full flex items-center justify-center bg-brand-black mb-4 shadow-md">
                         {icon}
                     </div>
 

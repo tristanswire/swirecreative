@@ -31,7 +31,7 @@ export default function Carousel() {
           {
             name: "Lite",
             price: 2499,
-            color: "#564E58",
+            color: "#252627",
             features: [
               { text: "WordPress or Shopify support", included: true },
               { text: "Minor theme & template edits", included: true },
@@ -39,13 +39,13 @@ export default function Carousel() {
               { text: "1 active task at a time", included: true },
               { text: "1 sprint per month", included: true },
             ],
-            cta: "Get Started",
+            cta: "Join Today",
             highlight: false,
           },
           {
             name: "Core",
             price: 4995,
-            color: "#904E55",
+            color: "#252627",
             features: [
               { text: "Everything in Lite", included: true },
               { text: "Biweekly 2-week sprints", included: true },
@@ -53,13 +53,13 @@ export default function Carousel() {
               { text: "Custom WordPress/Shopify builds", included: true },
               { text: "Basic API integrations", included: true },
             ],
-            cta: "Most Popular",
-            highlight: true,
+            cta: "Join Today",
+            highlight: false,
           },
           {
             name: "Advanced",
             price: "Custom",
-            color: "#BFB48F",
+            color: "#252627",
             features: [
               { text: "All Core features", included: true },
               { text: "React or Vue development", included: true },
@@ -67,8 +67,8 @@ export default function Carousel() {
               { text: "Complex UI/UX implementations", included: true },
               { text: "Tailored sprint planning", included: true },
             ],
-            cta: "Contact Us",
-            highlight: false,
+            cta: "Book a Call",
+            custom: true,
           },
         ].map((plan, i) => (
           <motion.div
@@ -121,16 +121,15 @@ export default function Carousel() {
 
             {/* CTA Button */}
             <a
-              href="#contact"
+              href={plan.custom ? "/calendly" : plan.cta + "/stripe"}
               className="inline-block w-full text-center py-3 rounded-md text-white font-medium transition-colors duration-300"
               style={{ backgroundColor: plan.color }}
             >
-              {plan.highlight ? "Buy Now →" : plan.cta + " →"}
+              {plan.custom ? "Book a Call" : plan.cta}
             </a>
           </motion.div>
         ))}
       </div>
     </section>
-
   );
 }

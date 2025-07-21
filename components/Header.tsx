@@ -6,17 +6,17 @@ export default function Header() {
             <div className="relative container mx-auto flex items-center justify-center">
                 {/* Logo */}
                 <Link href="/" className="absolute left-0 text-brand-black font-medium tracking-wider text-md">
-                    swire creative
+                    Swire Creative
                 </Link>
 
                 {/* Navigation */}
                 <nav className="flex gap-6">
                 {[
-                    { label: "how it works", target: "how" },
-                    { label: "membership", target: "benefits" },
-                    { label: "pricing", target: "pricing" },
-                    { label: "add-ons", target: "addons" },
-                    { label: "faq", target: "faq" },
+                    { label: "How it works", target: "how" },
+                    { label: "Membership", target: "benefits" },
+                    { label: "Pricing", target: "pricing" },
+                    { label: "Add-ons", target: "addons" },
+                    { label: "Faq", target: "faq" },
                 ].map(({ label, target }, i) => (
                     <a
                     key={i}
@@ -34,8 +34,8 @@ export default function Header() {
 
 
                 {/* CTA Button */}
-                <Link href="#" className="absolute right-0 inline-block px-8 py-2 rounded-md border-2 border-brand-purple bg-brand-white text-brand-black text-sm tracking-wider font-medium hover:bg-brand-black hover:text-brand-white hover:border-brand-black transition duration-350">
-                    login
+                <Link href="#" className="absolute right-0 inline-block px-8 py-2 rounded-md border-2 border-brand-black bg-brand-black text-brand-white text-sm tracking-wider font-medium hover:bg-brand-white hover:text-brand-black hover:border-brand-black transition duration-350">
+                    Login
                 </Link>
             </div>
         </header>

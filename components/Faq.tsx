@@ -29,7 +29,7 @@ export default function Faq() {
             },
             {
               q: "Is design included?",
-              a: "No — this is development-only. You can bring your designs or we can coordinate with trusted designers."
+              a: "No — this is development-only. You can bring  your designs or we can coordinate with trusted designers."
             }
           ].map(({ q, a }, i) => (
             <motion.details

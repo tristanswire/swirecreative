@@ -1,15 +1,13 @@
 import { motion } from "framer-motion";
 
 const images = [
-  "/images/feather-fuel-branding.jpg",
-  "/images/feather-fuel-texture.jpg",
-  "/images/feather-fuel-tableshot.jpg",
-  "/images/trailstack-logo.jpg",
   "/images/trailstack-branding.jpg",
-  "https://images.unsplash.com/photo-1633533446349-9040bad8260b?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fGJyYW5kc3xlbnwwfHwwfHx8MA%3D%3D",
-  "https://images.unsplash.com/photo-1617091076336-03dc99aff1df?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fGJyYW5kc3xlbnwwfHwwfHx8MA%3D%3D",
-  "https://plus.unsplash.com/premium_photo-1681702334647-9159c675dde1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzd8fGJyYW5kc3xlbnwwfHwwfHx8MA%3D%3D",
-  "https://images.unsplash.com/photo-1633533446213-a438ff5f0629?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDN8fGJyYW5kc3xlbnwwfHwwfHx8MA%3D%3D",
+  "/images/feather-fuel-branding.jpg",
+  "/images/rangr-data-logo.jpg",
+  "/images/flour-hearth-logo.jpg",
+  "/images/trailstack-logo.jpg",
+  "/images/rocket-burgers-logo.jpg",
+  "/images/feather-fuel-texture.jpg",
 ];
 
 export default function Carousel() {
@@ -42,7 +40,7 @@ export default function Carousel() {
           {[...images, ...images].map((src, index) => (
             <div
               key={index}
-              className="flex-shrink-0 w-[300px] h-[300px] rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
+              className="flex-shrink-0 w-[200px] h-[200px] rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
             >
               <img
                 src={src}
