@@ -122,7 +122,7 @@ export default function Carousel() {
             {/* CTA Button */}
             <a
               href={plan.custom ? "/calendly" : plan.cta + "/stripe"}
-              className="inline-block w-full text-center py-3 rounded-md text-white font-medium transition-colors duration-300"
+              className="inline-block w-full text-center py-3 rounded-md text-white font-medium"
               style={{ backgroundColor: plan.color }}
             >
               {plan.custom ? "Book a Call" : plan.cta}
