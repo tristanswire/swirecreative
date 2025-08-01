@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const images = [
   "/images/trailstack-branding.jpg",
@@ -42,7 +43,7 @@ export default function Carousel() {
               key={index}
               className="flex-shrink-0 w-[200px] h-[200px] rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
             >
-              <img
+              <Image
                 src={src}
                 alt={`brand-${index}`}
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500 ease-out"

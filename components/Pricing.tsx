@@ -22,7 +22,7 @@ export default function Carousel() {
         viewport={{ once: true }}
         className="font-light text-lg max-w-2xl mx-auto mb-16 text-brand-black text-center"
       >
-        Choose the plan that best fits your company's needs.
+        Choose the plan that best fits your company&apos;s needs.
       </motion.p>
       
       {/* Pricing Grid */}
