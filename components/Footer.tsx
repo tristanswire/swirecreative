@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-brand-black text-brand-white text-center py-8 border-t border-brand-white">
        <div className="mb-8 flex justify-center flex-wrap gap-6 text-sm items-center">
         <a
-          href="mailto:tristanswire@gmail.com"
+          href="mailto:tristan@swirecreative.com"
           className="flex items-center gap-1 hover:text-brand-white/50 transition-color duration-350"
         >
           <Mail size={24} />

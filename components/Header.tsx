@@ -48,10 +48,11 @@ export default function MobileHeader() {
 
         {!hideNav && (
           <Link
-            href="#"
+            href="https://cal.com/swirecreative"
+            target="_blank"
             className="hidden md:inline-block px-6 py-2 rounded-md border-2 border-brand-black bg-brand-black text-brand-white text-sm font-medium hover:bg-brand-white hover:text-brand-black transition"
           >
-            Login
+            Book a Call
           </Link>
         )}
 

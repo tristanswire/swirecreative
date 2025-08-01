@@ -1,5 +1,7 @@
 import "./globals.css"
 import { Plus_Jakarta_Sans, Playfair_Display } from "next/font/google";
+import { GoogleAnalytics } from './lib/analytics';
+import ClientLayout from './ClientLayout';
 
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -22,7 +24,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${plusJakarta.variable} ${playfair.variable}`}>
       <body className={`font-sans bg-[#F5F2ED] text-[#2F3B20]`}>
-        {children}
+        <GoogleAnalytics />
+        <ClientLayout>
+          {children}
+        </ClientLayout>
       </body>
     </html>
   )

@@ -21,7 +21,7 @@ export default function TermsPage() {
             <section className="bg-brand-white py-20 px-6">
               <div className="max-w-3xl mx-auto text-brand-black">
                 <h1 className="text-4xl font-semibold mb-8">Terms of Service</h1>
-                <p className="text-sm text-gray-500 mb-10">Effective Date: [Insert date]</p>
+                <p className="text-sm text-gray-500 mb-10">Effective Date: August 1, 2025</p>
 
                 <div className="space-y-8 text-sm leading-7">
                   <div>
@@ -41,7 +41,7 @@ export default function TermsPage() {
                   <div>
                     <h2 className="text-lg font-semibold">3. Cancellation</h2>
                     <p>
-                      To avoid charges for the next billing cycle, clients must cancel at least 14 days prior to the start of that cycle. Cancellations must be submitted in writing to <a href="mailto:tristanswire@gmail.com" className="underline">tristanswire@gmail.com</a>. Upon cancellation, work will stop at the end of the current paid period.
+                      To avoid charges for the next billing cycle, clients must cancel at least 14 days prior to the start of that cycle. Cancellations must be submitted in writing to <a href="mailto:tristan@swirecreative.com" className="underline">tristan@swirecreative.com</a>. Upon cancellation, work will stop at the end of the current paid period.
                     </p>
                   </div>
 
@@ -82,7 +82,7 @@ export default function TermsPage() {
 
                   <div>
                     <h2 className="text-lg font-semibold">9. Contact</h2>
-                    <p>Questions? Contact us at <a href="mailto:tristanswire@gmail.com" className="underline">tristanswire@gmail.com</a>.</p>
+                    <p>Questions? Contact us at <a href="mailto:tristan@swirecreative.com" className="underline">tristan@swirecreative.com</a>.</p>
                   </div>
                 </div>
               </div>

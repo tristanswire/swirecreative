@@ -21,7 +21,7 @@ export default function PrivacyPage() {
             <section className="bg-brand-white py-20 px-6">
               <div className="max-w-3xl mx-auto text-brand-black">
                 <h1 className="text-4xl font-semibold mb-8">Privacy Policy</h1>
-                <p className="text-sm text-gray-500 mb-10">Effective Date: [Insert date]</p>
+                <p className="text-sm text-gray-500 mb-10">Effective Date: August 1, 2025</p>
 
                 <div className="space-y-8 text-sm leading-7">
                   <div>
@@ -71,7 +71,7 @@ export default function PrivacyPage() {
 
                   <div>
                     <h2 className="text-lg font-semibold">7. Contact</h2>
-                    <p>Questions about this policy? Email us at <a href="mailto:tristanswire@gmail.com" className="underline">tristanswire@gmail.com</a>.</p>
+                    <p>Questions about this policy? Email us at <a href="mailto:tristan@swirecreative.com" className="underline">tristan@swirecreative.com</a>.</p>
                   </div>
                 </div>
               </div>

@@ -1,4 +1,5 @@
 "use client";
+import Addons from "@/components/Addons";
 import Carousel from "@/components/Carousel";
 import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
@@ -18,6 +19,7 @@ export default function Home() {
       <How />
       <Membership />
       <Pricing />
+      <Addons />
       <Faq />
       <Footer />
     </main>
