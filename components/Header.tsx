@@ -3,9 +3,12 @@ import { useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { HiOutlineMenuAlt3, HiOutlineX } from "react-icons/hi";
+import { usePathname } from "next/navigation";
 
 export default function MobileHeader() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+  const hideNav = pathname === "/terms-of-service" || pathname === "/privacy-policy";
 
   const navItems = [
     { label: "How it works", target: "how" },
@@ -17,7 +20,7 @@ export default function MobileHeader() {
 
   return (
     <header className="bg-brand-white py-4 shadow-sm z-50 relative">
-      <div className="relative container mx-auto flex items-center justify-between px-4 lg:px-0">
+      <div className={`relative container mx-auto flex items-center px-4 lg:px-0 ${ hideNav ? 'justify-center' : 'justify-between' }`} >
         {/* Logo */}
         <Link
           href="/"
@@ -26,29 +29,31 @@ export default function MobileHeader() {
           Swire Creative
         </Link>
 
-        {/* Desktop Nav */}
-        <nav className="hidden md:flex gap-6">
-          {navItems.map(({ label, target }, i) => (
-            <a
-              key={i}
-              href={`#${target}`}
-              className="relative text-sm font-medium font-sans text-brand-black pb-1 
-                hover:after:content-[''] hover:after:absolute hover:after:left-0 
-                hover:after:bottom-0 hover:after:w-full hover:after:border-opacity-1 hover:after:border-b-2 
-                hover:after:border-brand-purple transition-all duration-500"
-            >
-              {label}
-            </a>
-          ))}
-        </nav>
+        {!hideNav && (
+          <nav className="hidden md:flex gap-6">
+            {navItems.map(({ label, target }, i) => (
+              <a
+                key={i}
+                href={`#${target}`}
+                className="relative text-sm font-medium font-sans text-brand-black pb-1 
+                  hover:after:content-[''] hover:after:absolute hover:after:left-0 
+                  hover:after:bottom-0 hover:after:w-full hover:after:border-opacity-1 hover:after:border-b-2 
+                  hover:after:border-brand-purple transition-all duration-500"
+              >
+                {label}
+              </a>
+            ))}
+          </nav>
+        )}
 
-        {/* CTA */}
-        <Link
-          href="#"
-          className="hidden md:inline-block px-6 py-2 rounded-md border-2 border-brand-black bg-brand-black text-brand-white text-sm font-medium hover:bg-brand-white hover:text-brand-black transition"
-        >
-          Login
-        </Link>
+        {!hideNav && (
+          <Link
+            href="#"
+            className="hidden md:inline-block px-6 py-2 rounded-md border-2 border-brand-black bg-brand-black text-brand-white text-sm font-medium hover:bg-brand-white hover:text-brand-black transition"
+          >
+            Login
+          </Link>
+        )}
 
         {/* Mobile Menu Icon */}
         <button

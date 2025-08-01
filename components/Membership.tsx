@@ -155,7 +155,7 @@ export default function Carousel() {
                     transition={{ delay: i * 0.1, type: "spring", stiffness: 80 }}
                     viewport={{ once: true }}
                     whileHover={{ scale: 1.03, y: -3 }}
-                    className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md text-center"
+                    className="bg-brand-white rounded-xl p-6 shadow-sm hover:shadow-md text-center"
                 >
                     {/* Icon in gradient circle */}
                     <div className="w-12 h-12 mx-auto rounded-full flex items-center justify-center bg-brand-black mb-4 shadow-md">
