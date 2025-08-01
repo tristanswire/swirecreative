@@ -9,7 +9,7 @@ export default function Carousel() {
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.4 }}
                 viewport={{ once: true }}
-                className="font-sans text-4xl font-semibold text-brand-white mb-4"
+                className="font-sans text-4xl lg:text-5xl font-semibold text-brand-white pb-4 lg:pb-6"
             >
                 Membership Benefits
             </motion.h2>
@@ -106,15 +106,19 @@ export default function Carousel() {
                     transition={{ delay: i * 0.1, type: "spring", stiffness: 80 }}
                     viewport={{ once: true }}
                     whileHover={{ scale: 1.03, y: -3 }}
-                    className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md text-center"
+                    className="bg-white rounded-xl p-6 py-12 shadow-sm hover:shadow-md text-center"
                 >
                     {/* Icon in gradient circle */}
                     <div className="w-12 h-12 mx-auto rounded-full flex items-center justify-center bg-brand-black mb-4 shadow-md">
                         {icon}
                     </div>
 
-                    <h3 className="text-lg font-semibold text-brand-black">{title}</h3>
-                    <p className="text-sm text-gray-600 mt-2 leading-relaxed">{desc}</p>
+                    <h3 className="text-lg lg:text-xl font-semibold mb-5 text-brand-black">{title}</h3>
+                    
+                    {/* Thin Divider */}
+                    <div className="w-10 h-[2px] mx-auto my-3 rounded-full bg-brand-black"></div>
+                    
+                    <p className="text-md text-brand-black mt-4 leading-relaxed">{desc}</p>
                 </motion.div>
                 ))}
             </div>

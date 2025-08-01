@@ -17,13 +17,14 @@ export default function Addons() {
         {[
           {
             category: "oneTime",
-            title: "Emergency Fix",
-            desc: "Got a critical issue? We’ll jump in and resolve it fast — usually within 48–72 hours.",
-            price: 1000,
+            title: "Same-Day Bug Fix",
+            desc: "Submit a bug by noon (CST) — and we’ll fix it before the day is done.",
+            price: 500,
             color: "#252627",
             icon: (
               <svg className="w-6 h-6 mx-auto" viewBox="0 0 24 24" fill="none">
-                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" stroke="#FBF9FF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M12 6v6l4 2" stroke="#FBF9FF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <circle cx="12" cy="12" r="10" stroke="#FBF9FF" strokeWidth="2"/>
               </svg>
             ),
           },
@@ -41,14 +42,13 @@ export default function Addons() {
           },
           {
             category: "oneTime",
-            title: "Same-Day Bug Fix",
-            desc: "Submit a bug by noon (CST) — and we’ll fix it before the day is done.",
-            price: 500,
+            title: "Emergency Fix",
+            desc: "Got a critical issue? We’ll jump in and resolve it fast — usually within 48–72 hours.",
+            price: 2000,
             color: "#252627",
             icon: (
               <svg className="w-6 h-6 mx-auto" viewBox="0 0 24 24" fill="none">
-                <path d="M12 6v6l4 2" stroke="#FBF9FF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <circle cx="12" cy="12" r="10" stroke="#FBF9FF" strokeWidth="2"/>
+                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" stroke="#FBF9FF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             ),
           }
@@ -75,7 +75,7 @@ export default function Addons() {
               style={{ background: color }}
             ></div>
 
-            <p className="text-sm text-brand-black leading-relaxed mb-2">{desc}</p>
+            <p className="text-md text-brand-black leading-relaxed mb-2">{desc}</p>
             <p className="text-2xl font-semibold text-brand-black">
               {category === "monthly" ? (
                 <>

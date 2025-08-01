@@ -27,13 +27,25 @@ export default function Footer() {
       </p>
 
       <div className="flex justify-center flex-wrap gap-6 text-xs items-center">
-        <Link href="/terms-of-service" className="hover:text-brand-white/50 transition-color duration-350">
+        <Link
+          href="/terms-of-service"
+          className="relative text-brand-white hover:text-brand-white/50 transition-all duration-300 pb-1
+            after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-full after:bg-brand-white 
+            after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
+        >
           Terms of Service
         </Link>
-        <Link href="/privacy-policy" className="hover:text-brand-white/50 transition-color duration-350">
+
+        <Link
+          href="/privacy-policy"
+          className="relative text-brand-white hover:text-brand-white/50 transition-all duration-300 pb-1
+            after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-full after:bg-brand-white 
+            after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
+        >
           Privacy Policy
         </Link>
       </div>
+
     </footer>
   );
 }

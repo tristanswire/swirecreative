@@ -24,10 +24,13 @@ export default function MobileHeader() {
         {/* Logo */}
         <Link
           href="/"
-          className="text-brand-black font-medium tracking-wider text-md"
+          className="relative text-brand-black font-semibold text-lg lg:text-xl xl:text-2xl pb-1
+            after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-1/4 after:bg-brand-black
+            after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
         >
           Swire Creative
         </Link>
+
 
         {!hideNav && (
           <nav className="hidden md:flex gap-6">
@@ -35,22 +38,20 @@ export default function MobileHeader() {
               <a
                 key={i}
                 href={`#${target}`}
-                className="relative text-sm font-medium font-sans text-brand-black pb-0 
-                  hover:after:content-[''] hover:after:absolute hover:after:left-0 
-                  hover:after:bottom-0 hover:after:w-full hover:after:border-opacity-1 hover:after:border-b-2 
-                  hover:after:border-brand-purple transition-all duration-500"
+                className="relative font-semibold text-md font-sans text-brand-black pb-1 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-brand-black after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
               >
                 {label}
               </a>
             ))}
           </nav>
+
         )}
 
         {!hideNav && (
           <Link
             href="https://cal.com/swirecreative"
             target="_blank"
-            className="hidden md:inline-block px-6 py-2 rounded-md border-2 border-brand-black bg-brand-black text-brand-white text-sm font-medium hover:bg-brand-white hover:text-brand-black transition"
+            className="hidden md:inline-block px-6 py-2 lg:py-3 lg:px-8 rounded-md border-2 border-brand-black bg-brand-black text-brand-white text-sm md:text-md font-semibold hover:bg-brand-sand hover:text-brand-black hover:border-brand-black duration-350 transition"
           >
             Book a Call
           </Link>

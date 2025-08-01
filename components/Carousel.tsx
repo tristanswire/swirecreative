@@ -5,6 +5,7 @@ const images = [
   "/images/trailstack-branding.jpg",
   "/images/feather-fuel-branding.jpg",
   "/images/rangr-data-logo.jpg",
+  "/images/amanda-swire.jpg",
   "/images/flour-hearth-logo.jpg",
   "/images/trailstack-logo.jpg",
   "/images/rocket-burgers-logo.jpg",
@@ -44,8 +45,8 @@ export default function Carousel() {
               className="flex-shrink-0 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
             >
               <Image
-                width={200}
-                height={200}
+                width={175}
+                height={175}
                 src={src}
                 alt={`brand-${index}`}
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500 ease-out"

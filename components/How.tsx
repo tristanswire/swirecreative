@@ -9,7 +9,7 @@ export default function Faq() {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.4 }}
         viewport={{ once: true }}
-        className="font-sans text-4xl font-semibold mb-4 text-brand-black relative"
+        className="font-sans text-4xl lg:text-5xl font-semibold pb-4 lg:pb-8 lg:pt-4 text-brand-black relative"
       >
         How It Works
       </motion.h2>
@@ -19,7 +19,7 @@ export default function Faq() {
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.2 }}
         viewport={{ once: true }}
-        className="font-light text-lg max-w-2xl mx-auto mb-16 text-brand-black relative"
+        className="font-light text-lg lg:text-xl max-w-2xl mx-auto mb-16 text-brand-black relative"
       >
         Our streamlined process ensures your project moves from concept to completion efficiently and effectively.
       </motion.p>
@@ -99,7 +99,7 @@ export default function Faq() {
             </div>
 
             {/* Title */}
-            <h3 className="text-lg font-semibold text-brand-black">{title}</h3>
+            <h3 className="text-lg 2xl:text-xl font-semibold text-brand-black mb-4 2xl:mb-6">{title}</h3>
 
             {/* Thin Divider */}
             <div
@@ -108,7 +108,7 @@ export default function Faq() {
             ></div>
 
             {/* Description */}
-            <p className="text-sm text-brand-black leading-relaxed">{desc}</p>
+            <p className="text-md text-brand-black leading-relaxed mt-4 2xl:mt-6">{desc}</p>
           </motion.div>
         ))}
       </div>

@@ -9,7 +9,7 @@ export default function Carousel() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
-        className="font-sans text-4xl font-semibold text-center mb-6 text-brand-black"
+        className="font-sans text-4xl lg:text-5xl font-bold text-center mb-4 text-brand-black"
       >
         Pricing Plans
       </motion.h2>
@@ -20,7 +20,7 @@ export default function Carousel() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.5 }}
         viewport={{ once: true }}
-        className="font-light text-lg max-w-2xl mx-auto mb-16 text-brand-black text-center"
+        className="font-light text-lg max-w-2xl mx-auto mb-24 text-brand-black text-center"
       >
         Choose the plan that best fits your company&apos;s needs.
       </motion.p>
@@ -38,7 +38,7 @@ export default function Carousel() {
               { text: "Security & performance updates", included: true },
               { text: "Basic bug fixes and content changes", included: true },
               { text: "1 active task at a time", included: true },
-              { text: "Requests Method: Email Only", included: true },
+              { text: "Request Method: Email only", included: true },
             ],
             cta: "Start Maintenance Plan",
             highlight: false,
@@ -50,10 +50,9 @@ export default function Carousel() {
             features: [
               { text: "Everything in Lite", included: true },
               { text: "Biweekly sprint planning with kickoff meetings", included: true },
-              { text: "2 active tasks at a time", included: true },
               { text: "Custom WordPress or Shopify builds", included: true },
               { text: "Basic API integrations & workflow automations", included: true },
-              { text: "Requests Method: Email & Trello Board", included: true },
+              { text: "Requests managed via Trello board + email", included: true },
             ],
             cta: "Start Growth Plan",
             highlight: false,
@@ -80,7 +79,7 @@ export default function Carousel() {
             transition={{ delay: i * 0.2, type: "spring", stiffness: 80 }}
             viewport={{ once: true }}
             className={`relative rounded-xl shadow-lg bg-white flex flex-col py-10 px-8 pb-6 ${
-              i === 1 ? "lg:scale-[1.1] border-1 border-brand-sand/50" : ""
+              i === 1 ? "lg:scale-[1.05] border-1 border-brand-white" : ""
             }`}
           >
             {/* Most Popular Banner */}
@@ -104,9 +103,9 @@ export default function Carousel() {
               {plan.features.map((feature, idx) => (
                 <li
                   key={idx}
-                  className="flex items-start gap-2 text-brand-black text-sm"
+                  className="flex items-start gap-2 text-brand-black text-md"
                 >
-                  <span className="text-brand-black text-md">✓</span>
+                  <span className="text-brand-black text-sm pb-2">✓</span>
                   {feature.text}
                 </li>
               ))}
