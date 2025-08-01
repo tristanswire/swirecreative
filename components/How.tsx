@@ -25,7 +25,7 @@ export default function Faq() {
       </motion.p>
 
       {/* Cards */}
-      <div className="relative grid gap-10 md:grid-cols-3 max-w-6xl mx-auto">
+      <div className="relative grid gap-10 lg:grid-cols-3 max-w-6xl mx-auto">
         {[
           {
             title: "Discovery",
@@ -84,7 +84,7 @@ export default function Faq() {
         ].map(({ title, desc, svg, color }, i) => (
           <motion.div
             key={i}
-            className="bg-white rounded-2xl shadow-lg p-8 transition-all duration-350 hover:-translate-y-2 hover:shadow-2xl relative z-10"
+            className="bg-white max-w-md mx-auto rounded-2xl shadow-lg p-8 transition-all duration-350 hover:-translate-y-2 hover:shadow-2xl relative z-10"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: i * 0.15 }}

@@ -15,12 +15,12 @@ export default function MobileHeader() {
     { label: "Membership", target: "benefits" },
     { label: "Pricing", target: "pricing" },
     { label: "Add-ons", target: "addons" },
-    { label: "Faq", target: "faq" },
+    { label: "FAQ", target: "faq" },
   ];
 
   return (
     <header className="bg-brand-white py-4 shadow-sm z-50 relative">
-      <div className={`relative container mx-auto flex items-center px-4 lg:px-0 ${ hideNav ? 'justify-center' : 'justify-between' }`} >
+      <div className={`relative container mx-auto flex items-center px-4 max-w-[100%] ${ hideNav ? 'justify-center' : 'justify-between' }`} >
         {/* Logo */}
         <Link
           href="/"
@@ -35,7 +35,7 @@ export default function MobileHeader() {
               <a
                 key={i}
                 href={`#${target}`}
-                className="relative text-sm font-medium font-sans text-brand-black pb-1 
+                className="relative text-sm font-medium font-sans text-brand-black pb-0 
                   hover:after:content-[''] hover:after:absolute hover:after:left-0 
                   hover:after:bottom-0 hover:after:w-full hover:after:border-opacity-1 hover:after:border-b-2 
                   hover:after:border-brand-purple transition-all duration-500"

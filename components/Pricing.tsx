@@ -26,7 +26,7 @@ export default function Carousel() {
       </motion.p>
       
       {/* Pricing Grid */}
-      <div className="relative grid gap-8 max-w-sm lg:grid-cols-3 lg:max-w-7xl mx-auto">
+      <div className="relative grid gap-8 max-w-md lg:grid-cols-3 lg:max-w-7xl mx-auto">
         {[
           {
             name: "Maintenance",
@@ -80,7 +80,7 @@ export default function Carousel() {
             transition={{ delay: i * 0.2, type: "spring", stiffness: 80 }}
             viewport={{ once: true }}
             className={`relative rounded-xl shadow-lg bg-white flex flex-col py-10 px-8 pb-6 ${
-              i === 1 ? "scale-[1.1] border-1 border-brand-sand/50" : ""
+              i === 1 ? "lg:scale-[1.1] border-1 border-brand-sand/50" : ""
             }`}
           >
             {/* Most Popular Banner */}

@@ -13,7 +13,7 @@ export default function Addons() {
         Add-on Services
       </motion.h2>
 
-      <div className="grid gap-10 md:grid-cols-3 max-w-7xl mx-auto">
+      <div className="grid gap-10 lg:grid-cols-3 max-w-7xl mx-auto">
         {[
           {
             category: "oneTime",
@@ -55,7 +55,7 @@ export default function Addons() {
         ].map(({ category, title, desc, price, color, icon }, i) => (
           <motion.div
             key={i}
-            className="bg-white rounded-2xl shadow-lg p-8 text-center relative z-10 text-brand-black"
+            className="max-w-md mx-auto bg-white rounded-2xl shadow-lg p-8 text-center relative z-10 text-brand-black"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: i * 0.1 }}
