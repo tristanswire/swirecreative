@@ -1,13 +1,22 @@
-import { motion } from "framer-motion";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { TrackEvent } from '@/app/lib/TrackEvent';
 
 export default function Addons() {
+
+  const seePricingClicked = () => {
+    TrackEvent({
+      action: 'cta_click',
+      category: 'engagement',
+      label: 'Hero CTA',
+    });
+  };
+
   return (
-    <section className="relative py-40 px-6 text-center text-brand-white overflow-hidden">
+    <section className="relative py-60 px-6 text-center text-brand-white overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <Image
-          fill={true}
+        <img
           src="/images/hero.jpg"
           alt="Hero background"
           className=" w-full h-full object-cover"
@@ -41,7 +50,8 @@ export default function Addons() {
         transition={{ delay: 0.5 }}
         href="#pricing"
         className="relative font-semibold text-md lg:text-lg max-w-[12rem] lg:max-w-[16rem] flex mx-auto justify-center px-6 py-3 lg:py-4 rounded-md border-2 border-brand-white bg-brand-white text-brand-black hover:bg-brand-sand hover:text-brand-black hover:border-brand-black transition duration-350"
-      >
+        onClick={seePricingClicked}
+     >
         See Pricing
       </motion.a>
     </section>

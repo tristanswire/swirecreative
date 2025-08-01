@@ -13,7 +13,7 @@ export default function Addons() {
         Add-on Services
       </motion.h2>
 
-      <div className="grid gap-10 lg:grid-cols-3 max-w-7xl mx-auto">
+      <div className="grid gap-10 lg:grid-cols-3 max-w-5xl mx-auto">
         {[
           {
             category: "oneTime",

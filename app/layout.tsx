@@ -1,9 +1,9 @@
 import "./globals.css";
 import { Plus_Jakarta_Sans, Playfair_Display } from "next/font/google";
-import { GoogleAnalytics } from './lib/analytics';
+import { GoogleAnalytics } from './lib/GoogleAnalytics';
 import ClientLayout from './ClientLayout';
 import { Suspense } from 'react';
-import { PageViewTracker } from '@/components/PageViewTracker'; // adjust path as needed
+import { PageViewTracker } from '@/app/lib/PageViewTracker'; // adjust path as needed
 
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -25,7 +25,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${plusJakarta.variable} ${playfair.variable}`}>
-      <body className="font-sans bg-[#F5F2ED] text-[#2F3B20]">
+      <body className="font-sans bg-brand-white text-brand-black">
         <GoogleAnalytics />
         
         {/* Track page views via Google Analytics */}
