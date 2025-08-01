@@ -12,7 +12,7 @@ export default function Footer() {
           <Mail size={24} />
         </a>
         <a
-          href="https://www.instagram.com/tristanswire"
+          href="https://www.instagram.com/swirecreative"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-1 hover:text-brand-white/50 transition-color duration-350"

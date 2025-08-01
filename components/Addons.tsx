@@ -76,7 +76,7 @@ export default function Addons() {
             ></div>
 
             <p className="text-md text-brand-black leading-relaxed mb-2">{desc}</p>
-            <p className="text-2xl font-semibold text-brand-black">
+            <p className="text-2xl font-bold text-brand-black">
               {category === "monthly" ? (
                 <>
                   ${price}
