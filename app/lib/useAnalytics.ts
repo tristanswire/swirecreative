@@ -9,7 +9,7 @@ declare global {
   }
 }
 
-export function usePageView() {
+export function useAnalytics() {
   const pathname = usePathname();
 
   useEffect(() => {

@@ -1,11 +1,13 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Addons() {
   return (
     <section className="relative py-40 px-6 text-center text-brand-white overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <img
+        <Image
+          fill={true}
           src="https://images.unsplash.com/photo-1503418895522-46f9804cda40?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Hero background"
           className=" w-full h-full object-cover"

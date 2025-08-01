@@ -12,7 +12,6 @@ import Pricing from "@/components/Pricing";
 export default function Home() {
   return (
     <main className="text-brand-black">
-
       <Header />
       <Hero />
       <Carousel />
@@ -23,6 +22,5 @@ export default function Home() {
       <Faq />
       <Footer />
     </main>
-    
   );
 }

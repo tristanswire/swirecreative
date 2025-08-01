@@ -41,9 +41,11 @@ export default function Carousel() {
           {[...images, ...images].map((src, index) => (
             <div
               key={index}
-              className="flex-shrink-0 w-[200px] h-[200px] rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
+              className="flex-shrink-0 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
             >
               <Image
+                width={200}
+                height={200}
                 src={src}
                 alt={`brand-${index}`}
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500 ease-out"
