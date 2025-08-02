@@ -46,10 +46,11 @@ export default function Addons() {
 
       <motion.a
         initial={{ opacity: 0, scale: 0.95 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ delay: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 0.5, duration: 0.35 }}
+        viewport={{ once: true }}
         href="#pricing"
-        className="relative font-semibold text-md lg:text-lg max-w-[12rem] lg:max-w-[16rem] flex mx-auto justify-center px-6 py-3 lg:py-4 rounded-md border-2 border-brand-white bg-brand-white text-brand-black hover:bg-brand-sand hover:text-brand-black hover:border-brand-black transition duration-350"
+        className="relative font-semibold text-md lg:text-lg max-w-[12rem] lg:max-w-[16rem] flex mx-auto justify-center px-6 py-3 lg:py-4 rounded-md border-2 border-brand-white bg-brand-white text-brand-black hover:bg-brand-black hover:text-brand-white hover:border-brand-black transition duration-350"
         onClick={seePricingClicked}
      >
         See Pricing
