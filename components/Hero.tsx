@@ -13,7 +13,7 @@ export default function Addons() {
   };
 
   return (
-    <section className="relative py-60 px-6 text-center text-brand-white overflow-hidden">
+    <section className="relative py-30 xl:py-60 px-6 text-center text-brand-white overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
