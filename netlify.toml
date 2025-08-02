@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://swirecreative.com/*"
+  to = "https://www.swirecreative.com/:splat"
+  status = 301
+  force = true

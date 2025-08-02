@@ -5,6 +5,7 @@ const nextConfig = {
   images: {
     domains: ['images.unsplash.com']
   },
+  basePath: '/swirecreative',
   output: 'export',
 
   async redirects() {
