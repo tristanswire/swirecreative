@@ -61,13 +61,13 @@ export default function FAQ() {
           <p className="mt-2 text-brand-black/70">
             Quick answers to the most common questions. Still unsure?{" "}
             <Link
-              href="https://cal.com/swirecreative/intro"
+              href="https://cal.com/swirecreative/introductory-call"
               target="_blank"
               className="underline underline-offset-2 font-semibold hover:no-underline"
             >
-              book a 15-min intro
+              Book a 15-min call
             </Link>
-            .
+            
           </p>
         </header>
 

@@ -97,14 +97,14 @@ export default function HeroHeader() {
               initial={{ opacity: 0, y: 6 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.35 }}
-              className="mt-5 pb-2 block md:flex md:flex-wrap justify-self-center items-center gap-2 gap-y-2 text-sm text-brand-black/70"
+              className="mt-5 pb-2 block justify-self-center items-center flex flex-wrap lg:justify-self-auto gap-2 gap-y-2 text-xs md:text-sm text-brand-black/70"
             >
               {[
                 "Month-to-month",
-                "Start in ~10 business days",
+                "Start in ~7 business days",
                 "2 active tasks / sprint",
               ].map((item, i) => (
-                <li key={i} className="flex justify-center md:justify-self-auto items-center gap-2 pb-4">
+                <li key={i} className="flex items-center gap-2 pb-4">
                   <HiCheck className="text-brand-black/70" />
                   <span>{item}</span>
                 </li>
@@ -121,7 +121,7 @@ export default function HeroHeader() {
               {/* <div className="text-xs uppercase font-bold tracking-wide text-brand-black/60 mb-4">
                 Trusted by
               </div> */}
-              <div className="flex justify-self-center items-center gap-4 md:gap-8 lg:gap-12 flex-wrap">
+              <div className="flex  justify-self-center lg:justify-self-auto items-center gap-4 md:gap-8 lg:gap-12 flex-wrap">
                 {logos.map(({ src, alt }, i) => (
                   <div key={i} className="opacity-50 grayscale-90 hover:grayscale-0 hover:opacity-100 transition duration-350">
                     <Image
