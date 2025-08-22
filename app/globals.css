@@ -7,11 +7,11 @@
 
 @theme inline {
   /* brand colors */
-  --color-brand-purple: #7D70BA;
-  --color-brand-maroon: #904E55;
-  --color-brand-sand: #BFB48F;
-  --color-brand-black: #252627;
-  --color-brand-white: #F2EFE9;
+  --color-brand-black: #08090A;
+  --color-brand-white: #FFFCF2;
+  --color-brand-gray: #262626;
+  --color-brand-green: #606D5D;
+  --color-brand-yellow: #FFEC51;
 
   /* fonts */
   --font-sans: var(--font-plusjakarta); /* main: plus jakarta sans */

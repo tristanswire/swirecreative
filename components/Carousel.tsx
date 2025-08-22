@@ -1,45 +1,35 @@
-import { motion } from "framer-motion";
-import Image from "next/image";
-
-const images = [
-  "/images/trailstack-branding.jpg",
-  "/images/feather-fuel-branding.jpg",
-  "/images/rangr-data-logo.jpg",
-  "/images/amanda-swire.jpg",
-  "/images/flour-hearth-logo.jpg",
-  "/images/trailstack-logo.jpg",
-  "/images/rocket-burgers-logo.jpg",
-  "/images/feather-fuel-texture.jpg",
+const logos = [
+  { src: "/images/flour-hearth-logo.jpg", alt: "Flour & Hearth" },
+  { src: "/images/reliava.png", alt: "Reliava" },
+  { src: "/images/rangr-data-logo.jpg", alt: "Rangr Data" },
+  { src: "/images/lightning.png", alt: "Lightning" },
+  { src: "/images/dragdrop.png", alt: "Rocket Burgers" },
+  { src: "/images/trailstack.png", alt: "Trailstack" },
 ];
 
 export default function Carousel() {
   return (
-    <section className="relative bg-brand-black/10 py-6 mb-6 overflow-hidden">
-      <div className="relative w-full overflow-hidden">
-        <motion.div
-          className="flex gap-6"
-          animate={{ x: ["0%", "-50%"] }}
-          transition={{
-            repeat: Infinity,
-            repeatType: "loop",
-            duration: 30,
-            ease: "linear",
-          }}
-        >
-          {/* Duplicate images for seamless infinite scroll */}
-          {[...images, ...images].map((src, index) => (
+    <section className="py-10 bg-white">
+      <div className="container mx-auto px-6 max-w-xl">
+        <h2 className="text-center text-xs md:text-sm font-semibold tracking-widest uppercase text-brand-black/60 mb-6">
+          Trusted By
+        </h2>
+
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 md:gap-2 items-center">
+          {logos.map(({ src, alt }, i) => (
             <div
-              key={index}
-              className="flex-shrink-0 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
+              key={i}
+              className="flex items-center justify-center opacity-90 grayscale hover:grayscale-0 hover:opacity-100 transition"
             >
               <img
                 src={src}
-                alt={`brand-${index}`}
-                className="h-[250px] w-[250px] object-cover hover:scale-105 transition-transform duration-500 ease-out"
+                alt={alt}
+                className="h-12 md:h-20 w-auto object-contain rounded-[100%]"
+                loading="lazy"
               />
             </div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

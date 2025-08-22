@@ -1,146 +1,114 @@
-import { motion } from "framer-motion";
+// components/OfferSection.tsx
+import Link from "next/link";
 
-export default function Carousel() {
+export default function OfferSection() {
   return (
-    <section id="pricing" className="bg-brand-white py-26 px-6 pb-6">
-      {/* Heading */}
-      <motion.h2
-        initial={{ opacity: 0, y: 15 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        viewport={{ once: true }}
-        className="font-sans text-4xl lg:text-5xl font-bold text-center mb-4 text-brand-black"
-      >
-        Pricing Plans
-      </motion.h2>
+    <section id="membership" className="bg-brand-white border-brand-black/10 border-t">
+      <div className="container mx-auto px-6 py-16 lg:py-20">
+        {/* Header – matches the new minimal style */}
+        <header className="text-center max-w-3xl mx-auto">
+          <span className="inline-block text-[0.7rem] tracking-widest uppercase text-brand-black/60 mb-2">
+            Core offer
+          </span>
+          <h2 className="font-sans font-light text-3xl md:text-4xl lg:text-5xl text-brand-black">
+            Development Partner
+          </h2>
+          <p className="mt-3 text-brand-black/70">
+            Ship marketing sites, landing pages, and iteration work in predictable 2-week sprints.
+          </p>
+        </header>
 
-      {/* Subheading */}
-      <motion.p
-        initial={{ opacity: 0, y: 10 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2, duration: 0.5 }}
-        viewport={{ once: true }}
-        className="font-light text-lg max-w-2xl mx-auto mb-24 text-brand-black text-center"
-      >
-        Choose the plan that best fits your company&apos;s needs.
-      </motion.p>
-      
-      {/* Pricing Grid */}
-      <div className="relative grid gap-8 max-w-md lg:grid-cols-3 lg:max-w-7xl mx-auto">
-        {[
-          {
-            name: "Maintenance",
-            price: 2499,
-            color: "#252627",
-            features: [
-              { text: "Ongoing WordPress or Shopify maintenance", included: true },
-              { text: "Minor theme & template edits", included: true },
-              { text: "Security & performance updates", included: true },
-              { text: "Basic bug fixes and content changes", included: true },
-              { text: "1 active task at a time", included: true },
-              { text: "Request Method: Email only", included: true },
-            ],
-            cta: "Start Maintenance Plan",
-            highlight: false,
-          },
-          {
-            name: "Growth",
-            price: 4995,
-            color: "#252627",
-            features: [
-              { text: "Everything in Lite", included: true },
-              { text: "Biweekly sprint planning with kickoff meetings", included: true },
-              { text: "Custom WordPress or Shopify builds", included: true },
-              { text: "Basic API integrations & workflow automations", included: true },
-              { text: "Requests managed via Trello board + email", included: true },
-            ],
-            cta: "Start Growth Plan",
-            highlight: false,
-          },
-          {
-            name: "Custom",
-            price: 9999,
-            color: "#252627",
-            features: [
-              { text: "Everything in Growth", included: true },
-              { text: "React or Vue development for modern frontend experiences", included: true },
-              { text: "Advanced API integrations and custom workflows", included: true },
-              { text: "Complex UI/UX implementations and tailored features", included: true },
-              { text: "Tailored sprint planning based on project needs", included: true },
-            ],
-            cta: "Book a Call",
-            custom: true,
-          },
-        ].map((plan, i) => (
-          <motion.div
-            key={i}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: i * 0.2, type: "spring", stiffness: 80 }}
-            viewport={{ once: true }}
-            className={`relative rounded-xl shadow-lg bg-white flex flex-col py-10 px-8 pb-6 ${
-              i === 1 ? "lg:scale-[1.05] border-1 border-brand-white" : ""
-            }`}
-          >
-            {/* Most Popular Banner */}
-            {i === 1 && (
-              <div className="absolute top-0 left-[1rem] -translate-y-1/2 bg-brand-black text-brand-white text-xs font-semibold px-4 py-1 rounded-full shadow-md">
-                Most Popular
-              </div>
-            )}
-
-            {/* Header */}
-            <h3
-              className={`font-sans ${
-                i === 1 ? "text-4xl" : "text-4xl"
-              } text-brand-black mb-6 font-bold`}
-            >
-              {plan.name}
+        {/* Content */}
+        <div
+          id="pricing"
+          className="mt-10 mx-auto max-w-7xl grid md:grid-cols-[1.2fr_.8fr] gap-6"
+        >
+          {/* What's included */}
+          <div className="rounded-xl border border-brand-black/10 bg-white p-6 pb-0 hover:border-brand-black/20 transition">
+            <div className="relative text-sm uppercase tracking-wide text-brand-black/70 mb-2">Sprint Details</div>
+            <h3 className="text-xl md:text-xl font-medium text-brand-black mb-4">
+              What’s included each sprint
             </h3>
 
-            {/* Feature List */}
-            <ul className="space-y-3 mb-8 text-left">
-              {plan.features.map((feature, idx) => (
-                <li
-                  key={idx}
-                  className="flex items-start gap-2 text-brand-black text-md"
-                >
-                  <span className="text-brand-black text-sm pb-2">✓</span>
-                  {feature.text}
-                </li>
-              ))}
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-brand-black/90">
+              <li className="flex items-start gap-2">
+                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-brand-black/90" />
+                2 active tasks at a time (unlimited queued)
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-brand-black/90" />
+                WordPress / Shopify / HTML + CSS + vanilla JS
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-brand-black/90" />
+                Quality checks + light UX notes
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-brand-black/90" />
+                Asynchronous updates (no meetings required)
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-brand-black/90" />
+                Launch support at end of sprint
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-brand-black/90" />
+                Email comms, 24–48h replies on business days
+              </li>
             </ul>
 
-            {/* Price */}
-            <div className="mt-auto mb-4">
-              <div className="font-sans text-4xl font-bold text-brand-black">
-                {typeof plan.price === "number" ? (
-                  <>
-                    ${plan.price.toLocaleString()}
-                    <span className="ml-[-0.15rem] font-semibold tracking-normal text-base text-xs ml-1 align-baseline">
-                      /month
-                    </span>
-                  </>
-                ) : (
-                  <>
-                    {plan.price}
-                  </>
-                )}
-              </div>
+            <div className="mt-6 mb-12 pt-6 border-t border-brand-black/10">
+              <p className="text-lg font-semibold text-brand-black mb-2">
+                Included baseline during onboarding (week 0)
+              </p>
+              <ul className="grid sm:grid-cols-2 gap-2 text-sm text-brand-black/80">
+                <li>• Plugin Safety Pack (audit + updates plan)</li>
+                <li>• Uptime &amp; Backups (monitor + nightly backups)</li>
+              </ul>
             </div>
 
-            {/* CTA Button */}
-            <a
-              href="https://cal.com/swirecreative"
-              className="inline-block w-full text-center py-3 rounded-md text-white font-medium transition bg-brand-black border-brand-black border-2 text-brand-white duration-350 hover:scale-[1.03] hover:bg-brand-white hover:text-brand-black hover:border-brand-black"
-              target="_blank"
-            >
-              {plan.custom ? "Book a Call" : plan.cta}
-            </a>
-          </motion.div>
+            <p className="text-xs text-brand-black/60">
+              Optional upgrades (count as tasks): CWV Pass (speed tune), Editor Mini-Course for your team.
+              <br />
+              Guardrails: no React/Vue apps or heavy API builds (quoted separately).
+            </p>
+          </div>
 
+          {/* Price + CTAs (light, minimal card) */}
+          <aside className="rounded-xl border border-brand-black/10 bg-white p-6 flex flex-col">
+            <div className="mb-6">
+              <div className="text-sm uppercase tracking-wide text-brand-black/70">Membership</div>
+              <div className="mt-1 flex items-end gap-2">
+                <span className="text-5xl font-semibold text-brand-black">$4,995</span>
+                <span className="mb-1 text-sm text-brand-black/70">/mo</span>
+              </div>
+              <p className="mt-2 text-sm text-brand-black/70">Month-to-month. Cancel anytime.</p>
+            </div>
 
-        ))}
+            <div className="mt-auto space-y-3">
+              <Link
+                href="https://cal.com/swirecreative/intro"
+                target="_blank"
+                className="block text-center w-full px-5 py-3 rounded-md border-2 border-brand-yellow bg-brand-yellow text-brand-black font-semibold hover:bg-brand-yellow hover:text-brand-black hover:border-brand-yellow hover:brightness-90 duration-350 transition"
+              >
+                Book a 15-min intro
+              </Link>
+              <a
+                href="#how"
+                className="block text-center w-full px-5 py-3 rounded-md border-2 duration-350 border-brand-black text-brand-black font-semibold hover:bg-brand-black hover:text-brand-white transition"
+              >
+                See how sprints work
+              </a>
+            </div>
+
+            <div className="mt-5 rounded-md border border-brand-black/10 bg-brand-black/[0.03] p-3">
+              <div className="text-sm font-semibold text-brand-black">Kickoff Sprint — $2,500</div>
+              <p className="text-xs text-brand-black/70 mt-1">
+                Fixed 2-week starter to ship one meaningful outcome (e.g., new homepage + pricing, or clean WP theme migration).
+              </p>
+            </div>
+          </aside>
+        </div>
       </div>
     </section>
   );

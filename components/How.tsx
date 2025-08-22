@@ -1,116 +1,64 @@
-import { motion } from "framer-motion";
+// components/HowItWorks.tsx
+export default function HowItWorks() {
+  const steps = [
+    {
+      title: "Onboarding",
+      body:
+        "Access + quick audit → prioritize your backlog → set success criteria. We also apply Plugin Safety + Uptime/Backups.",
+    },
+    {
+      title: "Sprint Setup",
+      body:
+        "You keep a queue. I work 2 active tasks at a time. Async updates; QA + launch at the end of the sprint.",
+    },
+    {
+      title: "Repeat or Pause",
+      body:
+        "Month-to-month. Swap priorities anytime. If timing’s off, you can pause and bank one unused sprint credit.",
+    },
+  ];
 
-export default function Faq() {
   return (
-    <section id="how" className="relative bg-brand-white text-center pt-6 py-32 pb-40 px-6 overflow-hidden">
-      {/* Section Title */}
-      <motion.h2
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.4 }}
-        viewport={{ once: true }}
-        className="font-sans text-4xl lg:text-5xl font-semibold pb-4 lg:pb-8 lg:pt-4 text-brand-black relative"
-      >
-        How It Works
-      </motion.h2>
+    <section id="how" className="bg-brand-white border-t border-brand-black/10">
+      <div className="container mx-auto px-6 py-16 lg:py-20">
+        {/* Section Header (matches hero vibe: clean, light-weight type) */}
+        <header className="text-center max-w-3xl mx-auto">
+          <span className="inline-block text-[0.7rem] tracking-widest uppercase text-brand-black/60 mb-2">
+            How it works
+          </span>
+          <h2 className="font-sans font-light text-3xl md:text-4xl lg:text-5xl text-brand-black">
+            Ship in focused, two-week sprints
+          </h2>
+          <p className="mt-3 text-brand-black/70">
+            Predictable, task-based output without hiring overhead.
+          </p>
+        </header>
 
-      <motion.p
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ delay: 0.2 }}
-        viewport={{ once: true }}
-        className="font-light text-lg lg:text-xl max-w-2xl mx-auto mb-16 text-brand-black relative"
-      >
-        Our streamlined process ensures your project moves from concept to completion efficiently and effectively.
-      </motion.p>
-
-      {/* Cards */}
-      <div className="relative grid gap-10 lg:grid-cols-3 max-w-6xl mx-auto">
-        {[
-          {
-            title: "Discovery",
-            desc: "Project kickoff focused on understanding your business, aligning goals, and defining clear action steps.",
-            svg: (
-              <svg
-                className="mx-auto w-6 h-6"
-                viewBox="0 0 25 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path fillRule="evenodd" clipRule="evenodd" d="M9.0625 18.0453C9.01679 16.914 8.26885 15.8509 7.26013 14.8658C5.86655 13.5048 5 11.6029 5 9.49987C5 5.35781 8.35781 2 12.4999 2C16.6419 2 19.9997 5.35781 19.9997 9.49987C19.9997 11.6027 19.1333 13.5046 17.7399 14.8655C16.6988 15.8824 15.9355 16.9822 15.9355 18.1544V19.75C15.9355 20.9926 14.9282 22 13.6855 22H11.3125C10.0699 22 9.0625 20.9926 9.0625 19.75V18.0453ZM6.5 9.49987C6.5 6.18624 9.18624 3.5 12.4999 3.5C15.8135 3.5 18.4997 6.18624 18.4997 9.49987C18.4997 11.1824 17.8082 12.7021 16.6918 13.7925C15.9506 14.5164 15.1802 15.4257 14.7589 16.5H10.2412C9.81983 15.4258 9.04933 14.5165 8.30817 13.7927C7.19168 12.7023 6.5 11.1825 6.5 9.49987ZM10.5625 18.2129C10.564 18.1938 10.5647 18.1744 10.5647 18.1549C10.5647 18.1088 10.564 18.063 10.5625 18.0175V18H14.4355V19.75C14.4355 20.1642 14.0998 20.5 13.6855 20.5H11.3125C10.8983 20.5 10.5625 20.1642 10.5625 19.75V18.2129Z" fill="#FBF9FF"/>
-                <path d="M1.75 9.5C1.75 9.08579 2.08579 8.75 2.5 8.75H3.5C3.91421 8.75 4.25 9.08579 4.25 9.5C4.25 9.91421 3.91421 10.25 3.5 10.25H2.5C2.08579 10.25 1.75 9.91421 1.75 9.5Z" fill="#FBF9FF"/>
-                <path d="M4.21484 3.85048C3.85612 3.64337 3.39743 3.76628 3.19032 4.125C2.98322 4.48372 3.10612 4.94241 3.46484 5.14952L4.33087 5.64952C4.68959 5.85663 5.14828 5.73372 5.35539 5.375C5.56249 5.01628 5.43959 4.55759 5.08087 4.35048L4.21484 3.85048Z" fill="#FBF9FF"/>
-                <path d="M3.19032 14.875C2.98322 14.5163 3.10612 14.0576 3.46484 13.8505L4.33087 13.3505C4.68959 13.1434 5.14828 13.2663 5.35539 13.625C5.56249 13.9837 5.43959 14.4424 5.08087 14.6495L4.21484 15.1495C3.85612 15.3566 3.39743 15.2337 3.19032 14.875Z" fill="#FBF9FF"/>
-                <path d="M21.5 8.75C21.0858 8.75 20.75 9.08579 20.75 9.5C20.75 9.91421 21.0858 10.25 21.5 10.25H22.5C22.9142 10.25 23.25 9.91421 23.25 9.5C23.25 9.08579 22.9142 8.75 22.5 8.75H21.5Z" fill="#FBF9FF"/>
-                <path d="M19.6454 13.625C19.8525 13.2663 20.3112 13.1434 20.6699 13.3505L21.5359 13.8505C21.8947 14.0576 22.0176 14.5163 21.8105 14.875C21.6034 15.2337 21.1447 15.3566 20.7859 15.1495L19.9199 14.6495C19.5612 14.4424 19.4383 13.9837 19.6454 13.625Z" fill="#FBF9FF"/>
-                <path d="M19.9199 4.35048C19.5612 4.55759 19.4383 5.01628 19.6454 5.375C19.8525 5.73372 20.3112 5.85663 20.6699 5.64952L21.5359 5.14952C21.8947 4.94241 22.0176 4.48372 21.8105 4.125C21.6034 3.76628 21.1447 3.64337 20.7859 3.85048L19.9199 4.35048Z" fill="#FBF9FF"/>
-              </svg>
-            ),
-            color: "#252627",
-          },
-          {
-            title: "Development",
-            desc: "Backlog planning, sprint-based execution, and ongoing collaboration to build what matters most.",
-            svg: (
-              <svg
-                className="mx-auto w-6 h-6"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M15.0302 4.34304C15.3231 4.63584 15.3233 5.11071 15.0305 5.4037L13.0603 7.37514L15.0305 9.34673C15.3233 9.63973 15.3231 10.1146 15.0301 10.4074C14.7371 10.7002 14.2623 10.7 13.9695 10.407L11.4695 7.90527C11.1768 7.61241 11.1768 7.13781 11.4695 6.84496L13.9695 4.34337C14.2623 4.05039 14.7372 4.05024 15.0302 4.34304Z" fill="#FBF9FF"/>
-                <path d="M18.2198 4.34304C17.9269 4.63584 17.9267 5.11071 18.2195 5.4037L20.1897 7.37514L18.2195 9.34673C17.9267 9.63973 17.9269 10.1146 18.2199 10.4074C18.5129 10.7002 18.9877 10.7 19.2805 10.407L21.7805 7.90527C22.0732 7.61241 22.0732 7.13781 21.7805 6.84496L19.2805 4.34337C18.9877 4.05039 18.5128 4.05024 18.2198 4.34304Z" fill="#FBF9FF"/>
-                <path d="M22 15.344V11.6622C21.5725 12.1975 21.0667 12.6675 20.5 13.0549V15.344C20.5 15.7582 20.1642 16.094 19.75 16.094H4.25C3.83579 16.094 3.5 15.7582 3.5 15.344V6.75021C3.5 6.33599 3.83579 6.00021 4.25 6.00021H9.88753C9.99391 5.47609 10.1599 4.97363 10.3782 4.50021H4.25C3.00736 4.50021 2 5.50757 2 6.75021V15.344C2 16.5866 3.00736 17.594 4.25 17.594H11.25V19.2502H9.00003C8.58582 19.2502 8.25003 19.586 8.25003 20.0002C8.25003 20.4144 8.58582 20.7502 9.00003 20.7502H15C15.4142 20.7502 15.75 20.4144 15.75 20.0002C15.75 19.586 15.4142 19.2502 15 19.2502H12.75V17.594H19.75C20.9926 17.594 22 16.5866 22 15.344Z" fill="#FBF9FF"/>
-              </svg>
-            ),
-            color: "#252627",
-          },
-          {
-            title: "Delivery",
-            desc: "Tested, reviewed, and shipped work delivered on schedule—with clear communication every step of the way.",
-            svg: (
-              <svg
-                className="mx-auto w-6 h-6"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                transform="rotate(0 0 0)">
-                <path fillRule="evenodd" clipRule="evenodd" d="M4.25 3.25C3.00736 3.25 2 4.25736 2 5.5V16C2 17.2426 3.00736 18.25 4.25 18.25H4.30197C4.56712 19.6729 5.81527 20.75 7.315 20.75C8.81473 20.75 10.0629 19.6729 10.328 18.25H14.052C14.3171 19.6729 15.5653 20.75 17.065 20.75C18.5647 20.75 19.8129 19.6729 20.078 18.25H22C22.4142 18.25 22.75 17.9142 22.75 17.5C22.75 17.0858 22.4142 16.75 22 16.75V12.4047C22 11.9553 21.8655 11.5163 21.6137 11.1441L19.0674 7.37945C18.6489 6.76072 17.9506 6.39003 17.2037 6.39003H15.75V5.5C15.75 4.25736 14.7426 3.25 13.5 3.25H4.25ZM7.315 14.62C5.94831 14.62 4.79055 15.5145 4.39523 16.75H4.25C3.83579 16.75 3.5 16.4142 3.5 16V5.5C3.5 5.08579 3.83579 4.75 4.25 4.75H13.5C13.9142 4.75 14.25 5.08579 14.25 5.5V16.4706C14.2107 16.5615 14.1757 16.6547 14.1452 16.75H10.2348C9.83945 15.5145 8.68169 14.62 7.315 14.62ZM17.065 14.62C16.5944 14.62 16.1485 14.7261 15.75 14.9156V12.695L20.5 12.695V16.75H19.9848C19.5895 15.5145 18.4317 14.62 17.065 14.62ZM19.8373 11.195L15.75 11.195V7.89003H17.2037C17.4527 7.89003 17.6854 8.01359 17.8249 8.21983L19.8373 11.195ZM15.5 17.685C15.5 16.8207 16.2007 16.12 17.065 16.12C17.9293 16.12 18.63 16.8207 18.63 17.685C18.63 18.5493 17.9293 19.25 17.065 19.25C16.2007 19.25 15.5 18.5493 15.5 17.685ZM5.75 17.685C5.75 16.8207 6.45067 16.12 7.315 16.12C8.17933 16.12 8.88 16.8207 8.88 17.685C8.88 18.5493 8.17933 19.25 7.315 19.25C6.45067 19.25 5.75 18.5493 5.75 17.685Z" fill="#FBF9FF"/>
-              </svg>
-
-            ),
-            color: "#252627",
-          },
-        ].map(({ title, desc, svg, color }, i) => (
-          <motion.div
-            key={i}
-            className="bg-white max-w-md mx-auto rounded-2xl shadow-lg p-8 hover:-translate-y-2 hover:shadow-2xl relative z-10"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: i * 0.15 }}
-            viewport={{ once: true }}
-          >
-            {/* Colored Circle Icon */}
-            <div
-              className="w-14 h-14 mx-auto rounded-full flex items-center justify-center shadow-md mb-6"
-              style={{ background: color }}
+        {/* Steps */}
+        <ol className="mt-10 max-w-7xl mx-auto text-center grid gap-4 md:gap-6 md:grid-cols-3">
+          {steps.map((s, i) => (
+            <li
+              key={i}
+              className="rounded-xl border border-brand-black/10 bg-white p-6 hover:border-brand-black/20 transition"
             >
-              {svg}
-            </div>
 
-            {/* Title */}
-            <h3 className="text-lg 2xl:text-xl font-semibold text-brand-black mb-4 2xl:mb-6">{title}</h3>
+              <span className="h-7 w-7 mb-4 m-auto rounded-full border-brand-yellow bg-brand-yellow text-brand-black flex items-center justify-center text-[12px] font-semibold">
+                {i + 1}
+              </span>
+              <div className="flex justify-center items-center gap-3">
+                <h3 className="font-sans text-brand-black text-lg md:text-xl font-medium">
+                  {s.title}
+                </h3>
+              </div>
+              <p className="mt-3 text-brand-black/80 leading-relaxed">{s.body}</p>
+            </li>
+          ))}
+        </ol>
 
-            {/* Thin Divider */}
-            <div
-              className="w-10 h-[2px] mx-auto my-3 rounded-full"
-              style={{ background: color }}
-            ></div>
-
-            {/* Description */}
-            <p className="text-md text-brand-black leading-relaxed mt-4 2xl:mt-6">{desc}</p>
-          </motion.div>
-        ))}
+        {/* Tiny reassurance line (optional, keeps the minimal/clean feel) */}
+        <p className="mt-8 text-center text-sm text-brand-black/55">
+          Month-to-month. Start in ~7 days. Pause anytime.
+        </p>
       </div>
     </section>
   );

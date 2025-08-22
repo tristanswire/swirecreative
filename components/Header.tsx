@@ -19,14 +19,14 @@ export default function MobileHeader() {
   ];
 
   return (
-    <header className="bg-brand-white py-4 shadow-sm z-50 relative">
-      <div className={`relative container mx-auto flex items-center px-4 max-w-[100%] ${ hideNav ? 'justify-center' : 'justify-between' }`} >
+    <header className="bg-brand-white p-4 border-b border-brand-black/10 z-50 relative">
+      <div className={`relative container mx-auto flex items-center m-0 p-0 max-w-7xl ${ hideNav ? 'justify-center' : 'justify-between' }`} >
         {/* Logo */}
         <Link
           href="/"
           className="relative text-brand-black font-semibold text-lg lg:text-xl xl:text-2xl pb-1
-            after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-1/4 after:bg-brand-black
-            after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
+            after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-1/4 after:bg-brand-purple-dk
+            after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 hover:text-brand-purple-dk"
         >
           Swire Creative
         </Link>
@@ -38,7 +38,7 @@ export default function MobileHeader() {
               <a
                 key={i}
                 href={`#${target}`}
-                className="relative font-semibold text-md font-sans text-brand-black pb-1 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-brand-black after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
+                className="relative font-light text-md transition-all duration-300 font-sans text-brand-black pb-1 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-brand-purple-dk after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 hover:text-brand-purple-dk"
               >
                 {label}
               </a>
@@ -49,9 +49,9 @@ export default function MobileHeader() {
 
         {!hideNav && (
           <Link
-            href="https://cal.com/swirecreative"
+            href="https://cal.com/swirecreative/introductory-call"
             target="_blank"
-            className="hidden md:inline-block px-6 py-2 lg:py-3 lg:px-8 rounded-md border-2 border-brand-black bg-brand-black text-brand-white text-sm md:text-md font-semibold hover:bg-brand-sand hover:text-brand-black hover:border-brand-black duration-350 transition"
+            className="hidden md:inline-block px-6 py-2 lg:py-3 lg:px-8 rounded-md border-2 border-brand-yellow bg-brand-yellow text-brand-black text-sm md:text-md font-semibold hover:bg-brand-yellow hover:text-brand-black hover:border-brand-yellow hover:brightness-90 duration-350 transition"
           >
             Book a Call
           </Link>
@@ -75,13 +75,13 @@ export default function MobileHeader() {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="fixed inset-0 bg-brand-black z-50 text-white flex flex-col"
+            className="fixed inset-0 bg-brand-white z-50 text-white flex flex-col"
           >
             <div className="flex justify-between items-center justify-center pb-0 pt-12">
-              <span className="text-3xl font-semibold">Swire Creative</span>
+              <span className="text-brand-black text-3xl font-semibold">Swire Creative</span>
               <button
                 onClick={() => setIsOpen(false)}
-                className="text-2xl cursor-pointer position absolute right-[1rem] top-[1rem]"
+                className="text-2xl text-brand-black cursor-pointer position absolute right-[1rem] top-[1rem]"
                 aria-label="Close menu"
               >
                 <HiOutlineX />
@@ -94,17 +94,17 @@ export default function MobileHeader() {
                   key={i}
                   href={`#${target}`}
                   onClick={() => setIsOpen(false)}
-                  className="text-lg font-medium text-white hover:text-brand-purple transition"
+                  className="text-lg font-light text-brand-black hover:text-brand-purple-dk transition"
                 >
                   {label}
                 </a>
               ))}
               <Link
-                href="#"
+                href="https://cal.com/swirecreative/introductory-call"
                 onClick={() => setIsOpen(false)}
-                className="mt-6 inline-block px-6 py-2 border-2 border-white text-white rounded-md hover:bg-white hover:text-brand-black transition"
+                className="mt-6 inline-block px-6 py-2 border-2 border-white text-white rounded-md hover:text-brand-white hover:bg-brand-purple-dk hover:border-brand-purple-dk transition"
               >
-                Login
+                Book a Call
               </Link>
             </nav>
           </motion.div>
