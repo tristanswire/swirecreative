@@ -72,7 +72,7 @@ export default function HeroHeader() {
               initial={{ opacity: 0, y: 6 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.4 }}
-              className="mt-8 pb-2 flex flex-row sm:flex-row items-center gap-3 justify-self-center lg:justify-self-auto"
+              className="mt-8 pb-2 flex flex-wrap max-w-xs sm:max-w-none sm:flex-row items-center gap-3 justify-self-center lg:justify-self-auto"
             >
               <a
                 href="https://cal.com/swirecreative/introductory-call"
@@ -116,14 +116,14 @@ export default function HeroHeader() {
               initial={{ opacity: 0, y: 6 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.45, duration: 0.35 }}
-              className="mt-6"
+              className="mt-2"
             >
               {/* <div className="text-xs uppercase font-bold tracking-wide text-brand-black/60 mb-4">
                 Trusted by
               </div> */}
               <div className="flex  justify-self-center lg:justify-self-auto items-center gap-4 md:gap-8 lg:gap-12 flex-wrap">
                 {logos.map(({ src, alt }, i) => (
-                  <div key={i} className="opacity-50 grayscale-90 hover:grayscale-0 hover:opacity-100 transition duration-350">
+                  <div key={i} className="opacity-50 w-[60px] md:w-auto grayscale-90 hover:grayscale-0 hover:opacity-100 transition duration-350">
                     <Image
                       src={src}
                       alt={alt}
