@@ -72,21 +72,21 @@ export default function HeroHeader() {
               initial={{ opacity: 0, y: 6 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.4 }}
-              className="mt-8 pb-2 flex flex-wrap max-w-xs sm:max-w-none sm:flex-row items-center gap-3 justify-self-center lg:justify-self-auto"
+              className="mt-8 m-auto pb-2 flex flex-wrap md:flex-nowrap max-w-xs md:max-w-none sm:flex-row items-center gap-3 justify-center lg:justify-normal"
             >
               <a
                 href="https://cal.com/swirecreative/introductory-call"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={primaryCtaClicked}
-                className="text-sm md:text-md inline-flex justify-center items-center rounded-md border-2 border-brand-yellow bg-brand-yellow text-brand-black px-6 py-3 font-semibold tracking-wide hover:bg-brand-yellow hover:text-brand-black hover:border-brand-yellow hover:brightness-90 transition duration-300 w-full min-w-[200px]"
+                className="text-sm md:text-md inline-flex justify-center items-center rounded-md border-2 border-brand-yellow bg-brand-yellow text-brand-black px-6 py-3 font-semibold tracking-wide hover:bg-brand-yellow hover:text-brand-black hover:border-brand-yellow hover:brightness-90 transition duration-300 w-full"
               >
                 Book a 15-min Call
               </a>
               <Link
                 href="#pricing"
                 onClick={secondaryCtaClicked}
-                className="text-sm md:text-md inline-flex justify-center items-center rounded-md border-2 border-brand-black bg-transparent text-brand-black px-6 py-3 font-semibold tracking-wide hover:bg-brand-black hover:text-brand-white transition duration-300 w-full min-w-[200px]"
+                className="text-sm md:text-md inline-flex justify-center items-center rounded-md border-2 border-brand-black bg-transparent text-brand-black px-6 py-3 font-semibold tracking-wide hover:bg-brand-black hover:text-brand-white transition duration-300 w-full"
               >
                 See pricing
               </Link>
@@ -97,7 +97,7 @@ export default function HeroHeader() {
               initial={{ opacity: 0, y: 6 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.35 }}
-              className="mt-5 pb-2 block justify-self-center items-center flex flex-wrap lg:justify-self-auto gap-2 gap-y-2 text-xs md:text-sm text-brand-black/70"
+              className="mt-5 pb-2 block justify-center items-center flex flex-wrap lg:justify-start gap-2 gap-y-2 text-xs md:text-sm text-brand-black/70"
             >
               {[
                 "Month-to-month",
@@ -121,7 +121,7 @@ export default function HeroHeader() {
               {/* <div className="text-xs uppercase font-bold tracking-wide text-brand-black/60 mb-4">
                 Trusted by
               </div> */}
-              <div className="flex  justify-self-center lg:justify-self-auto items-center gap-4 md:gap-8 lg:gap-12 flex-wrap">
+              <div className="flex  justify-center lg:justify-normal items-center gap-4 md:gap-8 lg:gap-12 flex-wrap">
                 {logos.map(({ src, alt }, i) => (
                   <div key={i} className="opacity-50 w-[60px] md:w-auto grayscale-90 hover:grayscale-0 hover:opacity-100 transition duration-350">
                     <Image
