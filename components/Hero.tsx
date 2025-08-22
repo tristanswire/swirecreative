@@ -79,14 +79,14 @@ export default function HeroHeader() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={primaryCtaClicked}
-                className="text-sm md:text-md inline-flex justify-center items-center rounded-md border-2 border-brand-yellow bg-brand-yellow text-brand-black px-6 py-3 font-semibold tracking-wide hover:bg-brand-yellow hover:text-brand-black hover:border-brand-yellow hover:brightness-90 transition duration-300 w-full sm:w-auto min-w-[200px]"
+                className="text-sm md:text-md inline-flex justify-center items-center rounded-md border-2 border-brand-yellow bg-brand-yellow text-brand-black px-6 py-3 font-semibold tracking-wide hover:bg-brand-yellow hover:text-brand-black hover:border-brand-yellow hover:brightness-90 transition duration-300 w-full min-w-[200px]"
               >
                 Book a 15-min Call
               </a>
               <Link
                 href="#pricing"
                 onClick={secondaryCtaClicked}
-                className="text-sm md:text-md inline-flex justify-center items-center rounded-md border-2 border-brand-black bg-transparent text-brand-black px-6 py-3 font-semibold tracking-wide hover:bg-brand-black hover:text-brand-white transition duration-300 w-full sm:w-auto min-w-[200px]"
+                className="text-sm md:text-md inline-flex justify-center items-center rounded-md border-2 border-brand-black bg-transparent text-brand-black px-6 py-3 font-semibold tracking-wide hover:bg-brand-black hover:text-brand-white transition duration-300 w-full min-w-[200px]"
               >
                 See pricing
               </Link>
