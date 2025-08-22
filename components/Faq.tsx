@@ -65,7 +65,7 @@ export default function FAQ() {
               target="_blank"
               className="underline underline-offset-2 font-semibold hover:no-underline"
             >
-              Book a 15-min call
+              Book a 15-min Call
             </Link>
             
           </p>

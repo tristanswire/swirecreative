@@ -81,7 +81,7 @@ export default function HeroHeader() {
                 onClick={primaryCtaClicked}
                 className="text-sm md:text-md inline-flex justify-center items-center rounded-md border-2 border-brand-yellow bg-brand-yellow text-brand-black px-6 py-3 font-semibold tracking-wide hover:bg-brand-yellow hover:text-brand-black hover:border-brand-yellow hover:brightness-90 transition duration-300 w-full sm:w-auto min-w-[200px]"
               >
-                Book a 15-min intro
+                Book a 15-min Call
               </a>
               <Link
                 href="#pricing"

@@ -91,7 +91,7 @@ export default function OfferSection() {
                 target="_blank"
                 className="block text-center w-full px-5 py-3 rounded-md border-2 border-brand-yellow bg-brand-yellow text-brand-black font-semibold hover:bg-brand-yellow hover:text-brand-black hover:border-brand-yellow hover:brightness-90 duration-350 transition"
               >
-                Book a 15-min intro
+                Book a 15-min Call
               </Link>
               <a
                 href="#how"
