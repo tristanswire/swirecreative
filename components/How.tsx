@@ -20,7 +20,7 @@ export default function HowItWorks() {
 
   return (
     <section id="how" className="bg-brand-white border-t border-brand-black/10">
-      <div className="container mx-auto px-6 py-16 lg:py-20">
+      <div className="container mx-auto px-6 py-12 lg:py-20">
         {/* Section Header (matches hero vibe: clean, light-weight type) */}
         <header className="text-center max-w-3xl mx-auto">
           <span className="inline-block text-[0.7rem] tracking-widest uppercase text-brand-black/60 mb-2">

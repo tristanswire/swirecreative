@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function OfferSection() {
   return (
-    <section id="membership" className="bg-brand-white border-brand-black/10 border-t">
-      <div className="container mx-auto px-6 py-16 lg:py-20">
+    <section id="membership" className="bg-brand-white border-brand-black/10 border-t ">
+      <div className="container mx-auto px-6 py-12 max-w-7xl lg:py-20">
         {/* Header – matches the new minimal style */}
         <header className="text-center max-w-3xl mx-auto">
           <span className="inline-block text-[0.7rem] tracking-widest uppercase text-brand-black/60 mb-2">
@@ -21,7 +21,7 @@ export default function OfferSection() {
         {/* Content */}
         <div
           id="pricing"
-          className="mt-10 mx-auto max-w-7xl grid md:grid-cols-[1.2fr_.8fr] gap-6"
+          className="mt-10 mx-auto  grid md:grid-cols-[1.2fr_.8fr] gap-6"
         >
           {/* What's included */}
           <div className="rounded-xl border border-brand-black/10 bg-white p-6 pb-0 hover:border-brand-black/20 transition">
@@ -67,7 +67,7 @@ export default function OfferSection() {
               </ul>
             </div>
 
-            <p className="text-xs text-brand-black/60">
+            <p className="text-xs text-brand-black/60 pb-6">
               Optional upgrades (count as tasks): CWV Pass (speed tune), Editor Mini-Course for your team.
               <br />
               Guardrails: no React/Vue apps or heavy API builds (quoted separately).
