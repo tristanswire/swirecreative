@@ -72,7 +72,7 @@ export default function HeroHeader() {
               initial={{ opacity: 0, y: 6 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.4 }}
-              className="mt-8 m-auto pb-2 flex flex-wrap md:flex-nowrap max-w-xs md:max-w-none sm:flex-row items-center gap-3 justify-center lg:justify-normal"
+              className="mt-8 m-auto pb-2 flex flex-wrap md:flex-nowrap max-w-xs md:max-w-[26rem] md:m-0 md:mt-5 sm:flex-row items-center gap-3 justify-center lg:justify-left"
             >
               <a
                 href="https://cal.com/swirecreative/introductory-call"
