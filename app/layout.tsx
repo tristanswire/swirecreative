@@ -4,6 +4,7 @@ import { GoogleAnalytics } from './lib/GoogleAnalytics';
 import ClientLayout from './ClientLayout';
 import { Suspense } from 'react';
 import { PageViewTracker } from '@/app/lib/PageViewTracker'; // adjust path as needed
+import { Metadata } from "next/dist/lib/metadata/types/metadata-interface";
 
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -18,7 +19,7 @@ const playfair = Playfair_Display({
 });
 
 // --- SEO metadata ---
-export const metadata = {
+export const metadata: Metadata = {
   // Brand first, then value prop
   title: "Swire Creative — Subscription Web Development That Scales",
   description:
@@ -55,8 +56,8 @@ export const metadata = {
     title: "Swire Creative — Subscription Web Development",
     description:
       "Subscription-based web development for startups, founders, and agencies.",
-    images: ["https://swirecreative.com/og-image.jpg"], // same OG image
-    creator: "@tristanswire", // update if you have a Twitter/X handle
+    images: ["https://swirecreative.com/og-image.jpg"],
+    creator: "@tristanswire",
   },
 };
 
