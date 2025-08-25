@@ -12,7 +12,6 @@ export default function MobileHeader() {
 
   const navItems = [
     { label: "How it works", target: "how" },
-    { label: "Membership", target: "benefits" },
     { label: "Pricing", target: "pricing" },
     { label: "Add-ons", target: "addons" },
     { label: "FAQ", target: "faq" },
