@@ -33,7 +33,7 @@ export default function MembershipIncluded() {
     {
       num: "5",
       title: "QA + Accessibility",
-      desc: "Cross-browser checks, a11y basics, light UX notes, and launch support.",
+      desc: "Cross-browser checks, web accessibility basics, light UX notes, and launch support.",
     },
     {
       num: "6",
@@ -43,7 +43,7 @@ export default function MembershipIncluded() {
   ];
 
   return (
-    <section id="benefits" className="bg-brand-white">
+    <section id="benefits" className="bg-brand-white border-brand-black/10 border-t border-b">
       <div className="container mx-auto px-6 py-16 lg:py-20">
         {/* Header (matches the new clean/hero style) */}
         <header className="text-center max-w-3xl mx-auto">
@@ -89,8 +89,8 @@ export default function MembershipIncluded() {
           >
             add-ons
           </a>{" "}
-          for Stability Pack, Rush Ticket, Emergency Incident, Slack Bridge + Loom, and the optional CWV Pass.
-          The owner-friendly <span className="font-medium">Editor Mini-Course</span> is included during onboarding.
+          for Rush Ticket, Slack Bridge + Loom, Stability Pack and Emergency Incident.
+          The owner-friendly <span className="font-semibold">Editor Mini-Course</span> is included during onboarding.
         </p>
       </div>
     </section>

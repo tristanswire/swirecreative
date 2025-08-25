@@ -5,8 +5,8 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import How from "@/components/How";
+import Membership from "@/components/Membership";
 import Pricing from "@/components/Pricing";
-import Proof from "@/components/Proof";
 
 export default function Home() {
   return (
@@ -16,6 +16,7 @@ export default function Home() {
       <How />
       <Pricing />
       <Addons />
+      <Membership />
       <Faq />
       <Footer />
     </main>

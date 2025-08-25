@@ -14,6 +14,7 @@ export default function MobileHeader() {
     { label: "How it works", target: "how" },
     { label: "Pricing", target: "pricing" },
     { label: "Add-ons", target: "addons" },
+    { label: "Membership", target: "benefits" },
     { label: "FAQ", target: "faq" },
   ];
 
