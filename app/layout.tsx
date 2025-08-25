@@ -20,7 +20,6 @@ const playfair = Playfair_Display({
 
 // --- SEO metadata ---
 export const metadata: Metadata = {
-  // Brand first, then value prop
   metadataBase: new URL("https://swirecreative.com"),
   title: "Swire Creative — Subscription Web Development That Scales",
   description:
@@ -43,7 +42,7 @@ export const metadata: Metadata = {
     siteName: "Swire Creative",
     images: [
       {
-        url: "https://swirecreative.com/og-image.jpg", // update with a real OG image
+        url: "/opengraph-image.jpg", // update with a real OG image
         width: 1200,
         height: 630,
         alt: "Swire Creative — Subscription Web Development",
@@ -51,15 +50,7 @@ export const metadata: Metadata = {
     ],
     locale: "en_US",
     type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Swire Creative — Subscription Web Development",
-    description:
-      "Subscription-based web development for startups, founders, and agencies.",
-    images: ["https://swirecreative.com/og-image.jpg"],
-    creator: "@tristanswire",
-  },
+  }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
