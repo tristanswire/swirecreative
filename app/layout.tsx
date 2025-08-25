@@ -21,6 +21,7 @@ const playfair = Playfair_Display({
 // --- SEO metadata ---
 export const metadata: Metadata = {
   // Brand first, then value prop
+  metadataBase: new URL("https://swirecreative.com"),
   title: "Swire Creative — Subscription Web Development That Scales",
   description:
     "Swire Creative helps startups, founders, and agencies ship faster with subscription-based WordPress, Shopify, and frontend development in biweekly sprints.",
