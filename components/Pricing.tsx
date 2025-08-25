@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function OfferSection() {
   return (
-    <section id="membership" className="bg-brand-white border-brand-black/10 border-t ">
+    <section id="pricing" className="bg-brand-white border-brand-black/10 border-t ">
       <div className="container mx-auto px-6 py-12 max-w-7xl lg:py-20">
         {/* Header – matches the new minimal style */}
         <header className="text-center max-w-3xl mx-auto">
@@ -20,7 +20,6 @@ export default function OfferSection() {
 
         {/* Content */}
         <div
-          id="pricing"
           className="mt-10 mx-auto  grid md:grid-cols-[1.2fr_.8fr] gap-6"
         >
           {/* What's included */}
