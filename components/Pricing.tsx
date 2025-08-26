@@ -86,7 +86,7 @@ export default function OfferSection() {
 
             <div className="mt-auto space-y-3">
               <Link
-                href="https://cal.com/swirecreative/intro"
+                href="https://cal.com/swirecreative/introductory-call"
                 target="_blank"
                 className="block text-center w-full px-5 py-3 rounded-md border-2 border-brand-yellow bg-brand-yellow text-brand-black font-semibold hover:bg-brand-yellow hover:text-brand-black hover:border-brand-yellow hover:brightness-90 duration-350 transition"
               >
