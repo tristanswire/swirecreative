@@ -11,8 +11,8 @@ const nextConfig = {
     return [
       {
         source: '/(.*)',
-        has: [{ type: 'host', value: 'www.swirecreative.com' }],
-        destination: 'https://swirecreative.com/:path*',
+        has: [{ type: 'host', value: 'www.swiredev.com' }],
+        destination: 'https://swiredev.com/:path*',
         permanent: true,
       },
     ];

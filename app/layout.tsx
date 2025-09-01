@@ -20,12 +20,12 @@ const playfair = Playfair_Display({
 
 // --- SEO metadata ---
 export const metadata: Metadata = {
-  metadataBase: new URL("https://swirecreative.com"),
-  title: "Swire Creative — Subscription Web Development That Scales",
+  metadataBase: new URL("https://swiredev.com"),
+  title: "Swire Dev — Subscription Web Development That Scales",
   description:
-    "Swire Creative helps startups, founders, and agencies ship faster with subscription-based WordPress, Shopify, and frontend development in biweekly sprints.",
+    "Swire Dev helps startups, founders, and agencies ship faster with subscription-based WordPress, Shopify, and frontend development in biweekly sprints.",
   keywords: [
-    "Swire Creative",
+    "Swire Dev",
     "subscription web development",
     "WordPress development",
     "Shopify development",
@@ -33,19 +33,19 @@ export const metadata: Metadata = {
     "biweekly sprints",
     "developer for hire"
   ],
-  authors: [{ name: "Swire Creative" }],
+  authors: [{ name: "Swire Dev" }],
   openGraph: {
-    title: "Swire Creative — Subscription Web Development That Scales",
+    title: "Swire Dev — Subscription Web Development That Scales",
     description:
       "Reliable development without the headaches. Ongoing WordPress, Shopify, and frontend support on a simple subscription.",
-    url: "https://swirecreative.com",
-    siteName: "Swire Creative",
+    url: "https://swiredev.com",
+    siteName: "Swire Dev",
     images: [
       {
         url: "/opengraph-image.jpg", // update with a real OG image
         width: 1200,
         height: 630,
-        alt: "Swire Creative — Subscription Web Development",
+        alt: "Swire Dev — Subscription Web Development",
       },
     ],
     locale: "en_US",

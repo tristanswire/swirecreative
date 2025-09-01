@@ -24,11 +24,11 @@ export default function MobileHeader() {
         {/* Logo */}
         <Link
           href="/"
-          className="relative text-brand-black font-semibold text-lg lg:text-xl xl:text-2xl pb-1
+          className="relative flex items-center text-brand-black font-semibold text-lg lg:text-xl xl:text-2xl pb-1
             after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-1/4 after:bg-brand-purple-dk
             after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 hover:text-brand-purple-dk"
         >
-          Swire Creative
+          Swire Dev
         </Link>
 
 
@@ -49,7 +49,7 @@ export default function MobileHeader() {
 
         {!hideNav && (
           <Link
-            href="https://cal.com/swirecreative/introductory-call"
+            href="https://cal.com/swiredev/introductory-call"
             target="_blank"
             className="hidden md:inline-block px-6 py-2 lg:py-3 lg:px-8 rounded-md border-2 border-brand-yellow bg-brand-yellow text-brand-black text-sm md:text-md font-semibold hover:bg-brand-yellow hover:text-brand-black hover:border-brand-yellow hover:brightness-90 duration-350 transition"
           >
@@ -78,7 +78,7 @@ export default function MobileHeader() {
             className="fixed inset-0 bg-brand-white z-50 text-white flex flex-col"
           >
             <div className="flex justify-between items-center justify-center pb-0 pt-12">
-              <span className="text-brand-black text-3xl font-semibold">Swire Creative</span>
+              <span className="text-brand-black text-3xl font-semibold">Swire Dev</span>
               <button
                 onClick={() => setIsOpen(false)}
                 className="text-2xl text-brand-black cursor-pointer position absolute right-[1rem] top-[1rem]"
@@ -100,7 +100,7 @@ export default function MobileHeader() {
                 </a>
               ))}
               <Link
-                href="https://cal.com/swirecreative/introductory-call"
+                href="https://cal.com/swiredev/introductory-call"
                 onClick={() => setIsOpen(false)}
                 className="mt-6 inline-block px-6 py-2 border-2 border-white text-white rounded-md hover:text-brand-white hover:bg-brand-purple-dk hover:border-brand-purple-dk transition"
               >

@@ -112,7 +112,7 @@ export default function AddonsMini() {
         </p>
 
         <Link
-            href="https://cal.com/swirecreative/introductory-call"
+            href="https://cal.com/swiredev/introductory-call"
             target="_blank"
             className="block max-w-[12rem] text-center m-auto rounded-md border-2 border-brand-yellow bg-brand-yellow text-brand-black px-6 py-3 font-semibold tracking-wide hover:bg-brand-yellow hover:text-brand-black hover:border-brand-yellow hover:brightness-90 transition duration-300 w-full sm:w-auto min-w-[200px]"
           >

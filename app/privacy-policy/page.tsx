@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Swire Creative",
+  title: "Privacy Policy | Swire Dev",
 };
 
 export default function PrivacyPage() {
@@ -15,7 +15,7 @@ export default function PrivacyPage() {
         <div className="max-w-3xl mx-auto text-brand-black">
           <div className="space-y-8 text-sm leading-7">
             <Head>
-              <title>Privacy Policy | Swire Creative</title>
+              <title>Privacy Policy | Swire Dev</title>
             </Head>
 
             <section className="bg-brand-white py-20 px-6">
@@ -71,7 +71,7 @@ export default function PrivacyPage() {
 
                   <div>
                     <h2 className="text-lg font-semibold">7. Contact</h2>
-                    <p>Questions about this policy? Email us at <a href="mailto:tristan@swirecreative.com" className="underline">tristan@swirecreative.com</a>.</p>
+                    <p>Questions about this policy? Email us at <a href="mailto:tristan@swiredev.com" className="underline">tristan@swiredev.com</a>.</p>
                   </div>
                 </div>
               </div>

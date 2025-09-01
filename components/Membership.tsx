@@ -12,33 +12,33 @@ export default function MembershipIncluded() {
   const items = [
     {
       num: "1",
-      title: "Two-Week Sprints",
-      desc: "Work ships in focused 2-week cycles so timelines stay predictable.",
+      title: "Predictable Sprints",
+      desc: "Focused delivery in set 2-week sprints means you always know when work lands.",
     },
     {
       num: "2",
-      title: "2 Active Tasks",
-      desc: "Two tasks in progress at a time, with unlimited items in your queue (story-pointed at kickoff).",
+      title: "Task Flow That Scales",
+      desc: "We manage your backlog with story points at kickoff so priorities move without chaos.",
     },
     {
       num: "3",
-      title: "CMS Builds & Iteration",
-      desc: "Clean WordPress or Shopify theme work (HTML/CSS/vanilla JS—no React/Vue).",
+      title: "CMS Builds That Last",
+      desc: "Clean, stable WordPress theme work in HTML/CSS/JS.",
     },
     {
       num: "4",
-      title: "Landing Pages",
-      desc: "From design handoff to publish-ready, wired to your forms, analytics, and SEO basics.",
+      title: "Launch-Ready Pages",
+      desc: "Pixel-perfect landing pages wired with forms, analytics, and SEO essentials.",
     },
     {
       num: "5",
-      title: "QA + Accessibility",
-      desc: "Cross-browser checks, web accessibility basics, light UX notes, and launch support.",
+      title: "QA + Accessibility Baked In",
+      desc: "Cross-browser testing, accessibility basics, and light UX notes—plus launch support.",
     },
     {
       num: "6",
-      title: "Async Updates",
-      desc: "Clear email updates during the sprint plus a weekly summary recap—no standing meetings needed.",
+      title: "Async by Default",
+      desc: "Stay updated with clear async check-ins—no meetings required.",
     },
   ];
 
@@ -50,11 +50,11 @@ export default function MembershipIncluded() {
           <span className="inline-block text-[0.7rem] tracking-widest uppercase text-brand-black/60 mb-2">
             What’s included
           </span>
-          <h2 className="font-sans font-light text-3xl md:text-4xl lg:text-5xl text-brand-black">
-            Membership essentials that keep you shipping
+          <h2 className="font-sans font-light text-3xl md:text-4xl lg:text-5xl text-brand-black leading-tight">
+            Development essentials. <br/> Every sprint.
           </h2>
           <p className="mt-3 text-brand-black/70">
-            Everything you need to move marketing sites and iterations—without hiring headaches.
+            Ship marketing sites and iterations on schedule—without adding headcount.
           </p>
         </header>
 
@@ -78,20 +78,6 @@ export default function MembershipIncluded() {
             </li>
           ))}
         </ol>
-
-        {/* Subtext / Add-ons link */}
-        <p className="mt-8 text-center text-sm text-brand-black/55 max-w-2xl mx-auto">
-          Need performance hardening, monitoring, or tighter comms? See the{" "}
-          <a
-            href="#addons"
-            onClick={handleCTA}
-            className="underline underline-offset-4 hover:no-underline font-medium"
-          >
-            add-ons
-          </a>{" "}
-          for Rush Ticket, Slack Bridge + Loom, Stability Pack and Emergency Incident.
-          The owner-friendly <span className="font-semibold">Editor Mini-Course</span> is included during onboarding.
-        </p>
       </div>
     </section>
   );

@@ -15,7 +15,7 @@ export default function FAQ() {
     },
     {
       q: "Do you work in JavaScript frameworks?",
-      a: "Not in this membership. I focus on WordPress, Shopify theme work, HTML/CSS, and vanilla JS. React/Vue or heavy API builds are quoted separately.",
+      a: "Not in this membership. I focus on WordPress, Shopify theme work, HTML/CSS, and JS. React/Vue or heavy API builds are quoted separately.",
     },
     {
       q: "How soon can we start?",
@@ -49,7 +49,7 @@ export default function FAQ() {
 
   return (
     <section id="faq" className="bg-brand-white">
-      <div className="container mx-auto px-6 py-16 lg:py-20 max-w-6xl">
+      <div className="container mx-auto px-6 pt-6 py-16 lg:py-20 lg:pt-0 max-w-6xl">
         {/* Header */}
         <header className="text-center max-w-2xl mx-auto mb-10">
           <span className="inline-block text-[0.7rem] tracking-widest uppercase text-brand-black/60 mb-1">
@@ -61,11 +61,11 @@ export default function FAQ() {
           <p className="mt-2 text-brand-black/70">
             Quick answers to the most common questions. Still unsure?{" "}
             <Link
-              href="https://cal.com/swirecreative/introductory-call"
+              href="https://cal.com/swiredev/introductory-call"
               target="_blank"
               className="underline underline-offset-2 font-semibold hover:no-underline"
             >
-              Book a 15-min Call
+              Book a Call
             </Link>
             
           </p>

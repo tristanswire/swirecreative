@@ -2,35 +2,35 @@
 export default function HowItWorks() {
   const steps = [
     {
-      title: "Onboarding",
+      title: "Subscribe",
       body:
-        "Access + quick audit → prioritize your backlog → set success criteria. We also apply Plugin Safety + Uptime/Backups.",
+        "No calls. No contracts. Just choose your plan, and you're officially onboarded.",
     },
     {
-      title: "Sprint Setup",
+      title: "Sync",
       body:
-        "You keep a queue. I work 2 active tasks at a time. Async updates; QA + launch at the end of the sprint.",
+        "Drop your backlog in. We pick priorities, sync asynchronously, and sprint through tasks in 2-week cycles.",
     },
     {
-      title: "Repeat or Pause",
+      title: "Ship",
       body:
-        "Month-to-month. Swap priorities anytime. If timing’s off, you can pause and bank one unused sprint credit.",
+        "You get clean, tested, deployable code—on time, every time.",
     },
   ];
 
   return (
-    <section id="how" className="bg-brand-white border-t border-brand-black/10">
+    <section id="how" className="bg-brand-white">
       <div className="container mx-auto px-6 py-12 lg:py-20">
         {/* Section Header (matches hero vibe: clean, light-weight type) */}
         <header className="text-center max-w-3xl mx-auto">
           <span className="inline-block text-[0.7rem] tracking-widest uppercase text-brand-black/60 mb-2">
             How it works
           </span>
-          <h2 className="font-sans font-light text-3xl md:text-4xl lg:text-5xl text-brand-black">
-            Ship in focused, two-week sprints
+          <h2 className="font-sans font-light text-3xl md:text-4xl lg:text-5xl text-brand-black leading-tight">
+            Simple Steps. Serious Output.
           </h2>
           <p className="mt-3 text-brand-black/70">
-            Predictable, task-based output without hiring overhead.
+            From sign-up to shipped code—in just days. Here's how we make dev magic happen.
           </p>
         </header>
 
@@ -57,7 +57,7 @@ export default function HowItWorks() {
 
         {/* Tiny reassurance line (optional, keeps the minimal/clean feel) */}
         <p className="mt-8 text-center text-sm text-brand-black/55">
-          Month-to-month. Start in ~7 days. Pause anytime.
+          Month-to-month. Start in 5-7 days. Pause anytime.
         </p>
       </div>
     </section>

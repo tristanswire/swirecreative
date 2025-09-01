@@ -8,18 +8,18 @@ export default function Footer() {
         {/* Social / contact */}
         <div className="mb-6 flex justify-center flex-wrap items-center gap-6 text-sm">
           <a
-            href="mailto:tristan@swirecreative.com"
-            aria-label="Email Swire Creative"
+            href="mailto:tristan@swiredev.com"
+            aria-label="Email Swire Dev"
             className="inline-flex items-center gap-2 hover:text-brand-black/60 transition-colors"
           >
             <Mail size={20} />
             <span className="sr-only">Email</span>
           </a>
           <a
-            href="https://www.instagram.com/swirecreative"
+            href="https://www.instagram.com/swiredev"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Swire Creative on Instagram"
+            aria-label="Swire Dev on Instagram"
             className="inline-flex items-center gap-2 hover:text-brand-black/60 transition-colors"
           >
             <Instagram size={20} />
@@ -49,7 +49,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <p className="mt-4 text-[11px] text-brand-black/70">
-          © {new Date().getFullYear()} <span className="font-semibold">Swire Creative</span>. All rights reserved.
+          © {new Date().getFullYear()} <span className="font-semibold">Swire Dev</span>. All rights reserved.
         </p>
       </div>
     </footer>

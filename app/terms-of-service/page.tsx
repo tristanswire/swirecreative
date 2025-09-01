@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | Swire Creative",
+  title: "Terms of Service | Swire Dev",
 };
 
 export default function TermsPage() {
@@ -15,7 +15,7 @@ export default function TermsPage() {
         <div className="max-w-3xl mx-auto text-brand-black">
           <div className="space-y-8 text-sm leading-7">
             <Head>
-              <title>Terms of Service | Swire Creative</title>
+              <title>Terms of Service | Swire Dev</title>
             </Head>
 
             <section className="bg-brand-white py-20 px-6">
@@ -27,7 +27,7 @@ export default function TermsPage() {
                   <div>
                     <h2 className="text-lg font-semibold">1. Services</h2>
                     <p>
-                      Swire Creative provides website development, maintenance, and related technical services under a subscription-based model. Services are delivered according to the selected plan (Lite, Core, or Custom), and include task prioritization, biweekly sprints (Core/Advanced), and communication via shared tools (email or Trello).
+                      Swire Dev provides website development, maintenance, and related technical services under a subscription-based model. Services are delivered according to the selected plan (Lite, Core, or Custom), and include task prioritization, biweekly sprints (Core/Advanced), and communication via shared tools (email or Trello).
                     </p>
                   </div>
 
@@ -41,7 +41,7 @@ export default function TermsPage() {
                   <div>
                     <h2 className="text-lg font-semibold">3. Cancellation</h2>
                     <p>
-                      To avoid charges for the next billing cycle, clients must cancel at least 14 days prior to the start of that cycle. Cancellations must be submitted in writing to <a href="mailto:tristan@swirecreative.com" className="underline">tristan@swirecreative.com</a>. Upon cancellation, work will stop at the end of the current paid period.
+                      To avoid charges for the next billing cycle, clients must cancel at least 14 days prior to the start of that cycle. Cancellations must be submitted in writing to <a href="mailto:tristan@swiredev.com" className="underline">tristan@swiredev.com</a>. Upon cancellation, work will stop at the end of the current paid period.
                     </p>
                   </div>
 
@@ -62,7 +62,7 @@ export default function TermsPage() {
                   <div>
                     <h2 className="text-lg font-semibold">6. Ownership & Deliverables</h2>
                     <p>
-                      Upon full payment, all completed work is owned by the client. Swire Creative retains the right to showcase completed projects in portfolios or marketing unless otherwise requested in writing.
+                      Upon full payment, all completed work is owned by the client. Swire Dev retains the right to showcase completed projects in portfolios or marketing unless otherwise requested in writing.
                     </p>
                   </div>
 
@@ -76,13 +76,13 @@ export default function TermsPage() {
                   <div>
                     <h2 className="text-lg font-semibold">8. Legal Stuff</h2>
                     <p>
-                      Swire Creative is not liable for lost revenue, site downtime, or damages resulting from client misuse, third-party services, or force majeure. These terms may be updated periodically. Continued use of the service constitutes acceptance of updated terms.
+                      Swire Dev is not liable for lost revenue, site downtime, or damages resulting from client misuse, third-party services, or force majeure. These terms may be updated periodically. Continued use of the service constitutes acceptance of updated terms.
                     </p>
                   </div>
 
                   <div>
                     <h2 className="text-lg font-semibold">9. Contact</h2>
-                    <p>Questions? Contact us at <a href="mailto:tristan@swirecreative.com" className="underline">tristan@swirecreative.com</a>.</p>
+                    <p>Questions? Contact us at <a href="mailto:tristan@swiredev.com" className="underline">tristan@swiredev.com</a>.</p>
                   </div>
                 </div>
               </div>

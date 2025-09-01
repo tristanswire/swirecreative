@@ -21,7 +21,7 @@ export default function Comparison() {
             highlight: false,
         },
         {
-            title: "✅ Swire Creative",
+            title: "✅ Swire Dev",
             points: [
                 "💵 Flat monthly rate — no surprises",
                 "🧠 Sprint-based delivery with your priorities in focus",
@@ -41,7 +41,7 @@ export default function Comparison() {
             Why Not Just Hire a Developer?
             </h2>
             <p className="text-lg text-brand-black font-light max-w-2xl mx-auto mb-16">
-            See how Swire Creative stacks up against hiring or outsourcing. One flat rate, zero overhead, real results.
+            See how Swire Dev stacks up against hiring or outsourcing. One flat rate, zero overhead, real results.
             </p>
 
             <div className="grid md:grid-cols-3 gap-8 text-left">
