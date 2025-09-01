@@ -30,7 +30,7 @@ export default function HowItWorks() {
             Simple Steps. Serious Output.
           </h2>
           <p className="mt-3 text-brand-black/70">
-            From sign-up to shipped code—in just days. Here's how we make dev magic happen.
+            From sign-up to shipped code—in just days. Here&apos;s how we make dev magic happen.
           </p>
         </header>
 
