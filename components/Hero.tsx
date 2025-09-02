@@ -54,7 +54,7 @@ export default function HeroHeader() {
               transition={{ delay: 0.1, duration: 0.45 }}
               className="pb-4 font-sans font-light tracking-tight text-4xl md:text-5xl lg:text-6xl leading-tight lg:w-[90%]"
             >
-              You design. We code.<br/> Pixel-perfect builds every 2 weeks.
+              You design. We code.
             </motion.h1>
 
             {/* Subhead */}
@@ -64,7 +64,7 @@ export default function HeroHeader() {
               transition={{ delay: 0.2, duration: 0.4 }}
               className="pb-4 max-w-2xl md:text-lg md:pb-6 text-brand-black/70 font-light"
             >
-              Launch faster with dependable dev cycles. Stay on track with prioritized tasks, async updates, and biweekly releases—all through a simple subscription.
+              Built for designers, marketers, and agencies who need high-quality sites—without hiring full-time devs. Get pixel-perfect websites in 2 weeks—no dev hiring, no headaches.
             </motion.p>
 
             {/* CTAs */}
@@ -101,7 +101,7 @@ export default function HeroHeader() {
             >
               {[
                 "Month-to-month",
-                "Start in ~7 business days",
+                "Start in 5-7 business days",
                 "2 active tasks / sprint",
               ].map((item, i) => (
                 <li key={i} className="flex items-center gap-2 pb-4 font-light">
