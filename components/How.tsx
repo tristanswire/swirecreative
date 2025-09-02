@@ -9,12 +9,12 @@ export default function HowItWorks() {
     {
       title: "Sync",
       body:
-        "Drop your backlog in. We pick priorities, sync asynchronously, and sprint through tasks in 2-week cycles.",
+        "Drop in your backlog. We'll prioritize, sync asynchronously, and execute in reliable 2‑week sprints.",
     },
     {
       title: "Ship",
       body:
-        "You get clean, tested, deployable code—on time, every time.",
+        "Receive tested, production-ready code—delivered on time, every time.",
     },
   ];
 

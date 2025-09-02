@@ -87,7 +87,7 @@ export default function AddonsMini() {
                           }`}
             >
               {mostPopular && (
-                <div className="absolute top-4 right-4 text-xs font-semibold text-brand-black bg-brand-yellow px-2 py-0.5 rounded">
+                <div className="absolute top-[-10px] right-[-10px] text-xs font-semibold text-brand-black bg-brand-yellow px-2 py-0.5 rounded">
                   Most Popular
                 </div>
               )}
