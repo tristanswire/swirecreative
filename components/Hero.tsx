@@ -64,7 +64,7 @@ export default function HeroHeader() {
               transition={{ delay: 0.2, duration: 0.4 }}
               className="pb-4 max-w-2xl md:text-lg md:pb-6 text-brand-black/70 font-light"
             >
-              Built for designers, marketers, and agencies who need high-quality sites—without hiring full-time devs. Get pixel-perfect websites in 2 weeks—no dev hiring, no headaches.
+              Built for designers, marketers, and agencies who need high-quality websites—without hiring, managing, or micromanaging developers. Get pixel-perfect results every 2 weeks—done right the first time.
             </motion.p>
 
             {/* CTAs */}
@@ -72,7 +72,7 @@ export default function HeroHeader() {
               initial={{ opacity: 0, y: 6 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.4 }}
-              className="mx-auto pb-6 flex flex-wrap md:flex-nowrap max-w-xs md:max-w-[26rem] lg:m-0 sm:flex-row items-center gap-3 justify-center lg:justify-left"
+              className="mx-auto pb-8 flex flex-wrap md:flex-nowrap max-w-xs md:max-w-[26rem] lg:m-0 sm:flex-row items-center gap-3 justify-center lg:justify-left"
             >
               <a
                 href="https://cal.com/swiredev/introductory-call"
@@ -92,36 +92,15 @@ export default function HeroHeader() {
               </Link>
             </motion.div>
 
-            {/* Small proof points */}
-            <motion.ul
-              initial={{ opacity: 0, y: 6 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4, duration: 0.35 }}
-              className="pb-6 lg:pb-19 block justify-center items-center flex flex-wrap lg:justify-start gap-2 gap-y-2 md:gap-6 text-xs md:text-sm text-brand-black/70"
-            >
-              {[
-                "Month-to-month",
-                "Start in 5-7 business days",
-                "2 active tasks / sprint",
-              ].map((item, i) => (
-                <li key={i} className="flex items-center gap-2 pb-4 font-light">
-                  <HiCheck className="text-brand-black/70" />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </motion.ul>
 
             {/* Trusted By strip */}
             <motion.div
               initial={{ opacity: 0, y: 6 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.45, duration: 0.35 }}
-              className="lg:absolute lg:left-0 lg:bottom-0"
             >
-              <div className="text-xs uppercase font-bold tracking-wide text-brand-black/50 pb-3 lg:pb-4">
-                Trusted by
-              </div>
               <div className="flex justify-center lg:justify-normal items-center gap-6 md:gap-8 flex-wrap">
+                <h4 className="text-xs uppercase font-bold tracking-wide text-brand-black/80">TRUSTED BY:</h4>
                 {logos.map(({ src, alt }, i) => (
                   <div key={i} className="opacity-50 md:w-auto grayscale-100 hover:grayscale-0 hover:opacity-100 transition duration-350">
                     <Image
@@ -129,7 +108,7 @@ export default function HeroHeader() {
                       alt={alt}
                       width={120}
                       height={28}
-                      className="h-3.5 lg:h-4.5 w-auto object-contain"
+                      className="h-3 lg:h-4 w-auto object-contain"
                       unoptimized
                     />
                   </div>

@@ -16,6 +16,7 @@ export default function Home() {
       <How />
       <Membership />
       <Pricing />
+      <Addons />
       <Faq />
       <Footer />
     </main>

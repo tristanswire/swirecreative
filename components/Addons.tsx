@@ -15,12 +15,13 @@ type Addon = {
   icon: React.ComponentType<{ className?: string }>;
   footnote?: string;
   featured?: boolean;
+  mostPopular?: boolean;
 };
 
 const addons: Addon[] = [
   {
     title: "Rush Ticket",
-    blurb: "Delivered next business day when issue is submitted before noon (CST). Skip the queue.",
+    blurb: "Need it now? Get priority turnaround by the next business day when submitted before noon (CST). Skip the backlog—limited to 2 per week.",
     price: "$500",
     unit: "per issue",
     icon: HiLightningBolt,
@@ -29,21 +30,22 @@ const addons: Addon[] = [
   },
   {
     title: "Slack Bridge + Loom",
-    blurb: "Shared Slack access for quick communication and sprint recaps included via Loom.",
+    blurb: "Real-time updates, fewer emails. Collaborate via Slack and get video sprint recaps via Loom. Faster feedback, smoother builds.",
     price: "$500",
     unit: "/ month",
     icon: HiChatAlt2,
+    mostPopular: true,
   },
   {
     title: "Emergency Incident",
-    blurb: "Site-down or security triage within 2-4 hours. 24 to 48 hour path to resolution.",
+    blurb: "Critical site issues? We triage within 2–4 hours and resolve within 24–48 hours. For urgent, high-stakes incidents.",
     price: "$2,000",
     unit: "per incident",
     icon: HiShieldExclamation,
   },
   {
     title: "Stability Pack",
-    blurb: "Safe updates in staging environment, daily offsite backups and 24/7 uptime alerts.",
+    blurb: "Peace of mind built in: staging-safe updates, offsite backups, and always-on uptime monitoring. Ideal for live product environments.",
     price: "$350+",
     unit: "/ month",
     icon: HiShieldCheck,
@@ -60,30 +62,35 @@ const addons: Addon[] = [
 
 export default function AddonsMini() {
   return (
-    <section id="addons" className="bg-brand-white border-t border-b border-brand-black/10">
-      <div className="container mx-auto px-6 py-16 lg:py-20 max-w-7xl">
+    <section id="addons" className="bg-brand-white border-b border-brand-black/10">
+      <div className="container mx-auto px-6 py-16 lg:py-20 lg:pt-0 max-w-7xl">
         {/* Header – minimal to match new hero/how-it-works style */}
         <header className="text-center max-w-2xl mx-auto mb-8">
           <span className="inline-block text-[0.7rem] tracking-widest uppercase text-brand-black/60 mb-1">
             Optional add-ons
           </span>
           <h2 className="font-sans font-light text-3xl md:text-4xl text-brand-black">
-            Add-ons you can toggle on
+            Need more flexibility? Add exactly what you need.
           </h2>
           <p className="mt-2 text-brand-black/70">
-            Lightweight extras that layer neatly on the sprint model.
+            No bundles. No pressure. Add these only when you need them.
           </p>
         </header>
 
         <ul className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 text-center justify-center">
-          {addons.map(({ title, blurb, price, unit, icon: Icon, footnote, featured }, i) => (
+          {addons.map(({ title, blurb, price, unit, icon: Icon, footnote, featured, mostPopular }, i) => (
             <li
               key={i}
-              className={`group rounded-xl border border-brand-black/10 bg-white p-6 shadow-sm transition 
+              className={`relative group rounded-xl border border-brand-black/10 bg-white p-6 shadow-sm transition 
                           hover:border-brand-black/20 hover:-translate-y-0.5 ${
                             featured ? "ring-1 ring-brand-black/10" : ""
                           }`}
             >
+              {mostPopular && (
+                <div className="absolute top-4 right-4 text-xs font-semibold text-brand-black bg-brand-yellow px-2 py-0.5 rounded">
+                  Most Popular
+                </div>
+              )}
                <span className="h-12 w-12 mb-4 m-auto rounded-full border-brand-yellow bg-brand-yellow text-brand-black flex items-center justify-center text-[12px] font-semibold">
                   <Icon className="text-xl" />
                 </span>

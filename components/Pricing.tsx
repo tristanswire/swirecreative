@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function OfferSection() {
   return (
-    <section id="pricing" className="bg-brand-white border-brand-black/10 border-b lg:mb-16">
+    <section id="pricing" className="bg-brand-white">
       <div className="container mx-auto px-6 py-12 max-w-7xl lg:py-20">
         {/* Header – matches the new minimal style */}
         <header className="text-center max-w-3xl mx-auto">
@@ -14,7 +14,7 @@ export default function OfferSection() {
             Your Dev Partner on Demand.
           </h2>
           <p className="mt-3 text-brand-black/70">
-            Launch marketing sites, landing pages, and product iterations—on schedule, every two weeks.
+            Ship polished, functional websites and product updates—on time, every two weeks. You focus on the big picture, we’ll handle the build.
           </p>
         </header>
 
@@ -26,7 +26,7 @@ export default function OfferSection() {
           <div className="rounded-xl border border-brand-black/10 bg-white p-6 pb-0 hover:border-brand-black/20 transition">
             <div className="relative text-sm uppercase tracking-wide text-brand-black/70 mb-2">What You Get Each Sprint</div>
             <h3 className="text-xl md:text-xl font-medium text-brand-black mb-4">
-              What’s included each sprint
+              What&apos;s included each sprint
             </h3>
 
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-brand-black/90">
@@ -57,8 +57,8 @@ export default function OfferSection() {
             </ul>
 
             <div className="mt-6 mb-4 pt-5 border-t border-brand-black/10">
-              <p className="text-lg font-semibold text-brand-black mb-2">
-                Week 0 Baseline Setup:
+              <p className="text-lg font-medium text-brand-black mb-2">
+                Baseline Setup <span className="text-xs">(if applicable)</span>
               </p>
               <ul className="grid sm:grid-cols-2 gap-2 text-sm text-brand-black/80">
                 <li>• Audit + plugin update plan for site stability</li>
@@ -103,9 +103,15 @@ export default function OfferSection() {
 
             <div className="mt-5 rounded-md border border-brand-black/10 bg-brand-black/[0.03] p-3">
               <div className="text-sm font-semibold text-brand-black">Kickoff Sprint — $2,500</div>
-              <p className="text-xs text-brand-black/70 mt-1">
-                Fixed 2-week starter to ship one meaningful outcome (e.g., new homepage + pricing, or clean WP theme migration).
-              </p>
+              <div className="text-xs text-brand-black/70 mt-1">
+                Kick off with a single 2-week sprint. See how we work—no commitment.
+                <ul className="lg:pt-2">
+                  <li>✅ One complete website build or marketing page</li>
+                  <li>✅ Code, QA, and handoff</li>
+                  <li className="pb-2">✅ Try before subscribing</li>
+                  <li>👉 Perfect for first-time clients.</li>
+                </ul>
+              </div>
             </div>
           </aside>
         </div>
